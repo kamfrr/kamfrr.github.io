@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /seo/privacy.html
+
+Sitemap: https://yuzhny-veter.ru/seo/sitemap.xml

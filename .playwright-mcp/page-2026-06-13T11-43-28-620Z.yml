@@ -1,0 +1,229 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Южный Ветер Южный Ветер" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Южный Ветер" [ref=e5]
+        - generic [ref=e6]: Южный Ветер
+      - button "Открыть меню" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - link "Главная" [ref=e14] [cursor=pointer]:
+        - /url: /
+      - text: / Продукция
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: Каталог
+        - heading "Каталог электротехнического оборудования" [level=1] [ref=e19]
+        - paragraph [ref=e20]: Полный ассортимент продукции до 110/220/500 кВ от ведущих производителей
+      - generic [ref=e21]:
+        - 'link "01 КТП / БКТП / РТП КТП / БКТП / РТП Комплектные трансформаторные подстанции: киосковые, мачтовые, блочные (БКТП), распределительные (РТП, РП) и мобильные модульные (ММПС) до 220 кВ" [ref=e22] [cursor=pointer]':
+          - /url: /catalog/ktp-bktp-rtp/
+          - generic [ref=e23]: "01"
+          - img "КТП / БКТП / РТП" [ref=e25]
+          - heading "КТП / БКТП / РТП" [level=3] [ref=e26]
+          - paragraph [ref=e27]: "Комплектные трансформаторные подстанции: киосковые, мачтовые, блочные (БКТП), распределительные (РТП, РП) и мобильные модульные (ММПС) до 220 кВ"
+        - link "02 КРУ / КСО 6–35 кВ КРУ / КСО 6–35 кВ Ячейки КСО-298, КСО-366, КСО-393 и комплектные распределительные устройства серий К-125, К-128, К-129, К-133, К-130, К-131" [ref=e28] [cursor=pointer]:
+          - /url: /catalog/kru-kso-6-35/
+          - generic [ref=e29]: "02"
+          - img "КРУ / КСО 6–35 кВ" [ref=e31]
+          - heading "КРУ / КСО 6–35 кВ" [level=3] [ref=e32]
+          - paragraph [ref=e33]: Ячейки КСО-298, КСО-366, КСО-393 и комплектные распределительные устройства серий К-125, К-128, К-129, К-133, К-130, К-131
+        - link "03 КРУЭ 110–500 кВ КРУЭ 110–500 кВ Комплектные распределительные устройства с элегазовой изоляцией серии LZ для напряжения 110, 220, 330 и 500 кВ" [ref=e34] [cursor=pointer]:
+          - /url: /catalog/krue-110-500/
+          - generic [ref=e35]: "03"
+          - img "КРУЭ 110–500 кВ" [ref=e37]
+          - heading "КРУЭ 110–500 кВ" [level=3] [ref=e38]
+          - paragraph [ref=e39]: Комплектные распределительные устройства с элегазовой изоляцией серии LZ для напряжения 110, 220, 330 и 500 кВ
+        - link "04 Высоковольтные выключатели Высоковольтные выключатели Колонковые (LTB) и баковые (DTB) элегазовые выключатели 110–220 кВ по ГОСТ Р 52565-2006" [ref=e40] [cursor=pointer]:
+          - /url: /catalog/vysokovoltnye-vyklyuchateli/
+          - generic [ref=e41]: "04"
+          - img "Высоковольтные выключатели" [ref=e43]
+          - heading "Высоковольтные выключатели" [level=3] [ref=e44]
+          - paragraph [ref=e45]: Колонковые (LTB) и баковые (DTB) элегазовые выключатели 110–220 кВ по ГОСТ Р 52565-2006
+        - link "05 Разъединители / заземлители Разъединители / заземлители Горизонтально-поворотные разъединители SDF 110–500 кВ и полупантографные GW 330–500 кВ" [ref=e46] [cursor=pointer]:
+          - /url: /catalog/razediniteli-zazemliteli/
+          - generic [ref=e47]: "05"
+          - img "Разъединители / заземлители" [ref=e49]
+          - heading "Разъединители / заземлители" [level=3] [ref=e50]
+          - paragraph [ref=e51]: Горизонтально-поворотные разъединители SDF 110–500 кВ и полупантографные GW 330–500 кВ
+        - link "06 Измерительные трансформаторы Измерительные трансформаторы Элегазовые трансформаторы тока TG и напряжения ТНГ 110–220 кВ" [ref=e52] [cursor=pointer]:
+          - /url: /catalog/izmeritelnye-transformatory/
+          - generic [ref=e53]: "06"
+          - img "Измерительные трансформаторы" [ref=e55]
+          - heading "Измерительные трансформаторы" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Элегазовые трансформаторы тока TG и напряжения ТНГ 110–220 кВ
+        - link "07 Высоковольтные вводы Высоковольтные вводы Трансформаторные (BRIT), выключательные (BRIB) и линейные (BRIL) вводы с RIP-изоляцией 35–330 кВ" [ref=e58] [cursor=pointer]:
+          - /url: /catalog/vysokovoltnye-vvody/
+          - generic [ref=e59]: "07"
+          - img "Высоковольтные вводы" [ref=e61]
+          - heading "Высоковольтные вводы" [level=3] [ref=e62]
+          - paragraph [ref=e63]: Трансформаторные (BRIT), выключательные (BRIB) и линейные (BRIL) вводы с RIP-изоляцией 35–330 кВ
+        - link "08 Токопроводы / шинопроводы Токопроводы / шинопроводы Токопроводы ТЗК, ТЭНЕ, Betobar-r, ГИЛ 6–35 кВ и шинопроводы ШЗК, ЭФИБАР 0,4–1 кВ" [ref=e64] [cursor=pointer]:
+          - /url: /catalog/tokoprovody-shinoprovody/
+          - generic [ref=e65]: "08"
+          - img "Токопроводы / шинопроводы" [ref=e67]
+          - heading "Токопроводы / шинопроводы" [level=3] [ref=e68]
+          - paragraph [ref=e69]: Токопроводы ТЗК, ТЭНЕ, Betobar-r, ГИЛ 6–35 кВ и шинопроводы ШЗК, ЭФИБАР 0,4–1 кВ
+        - link "09 Реклоузеры Реклоузеры Автоматические пункты секционирования К-123К и К-123С для защиты воздушных ЛЭП 6–10 кВ" [ref=e70] [cursor=pointer]:
+          - /url: /catalog/reklouzery/
+          - generic [ref=e71]: "09"
+          - img "Реклоузеры" [ref=e73]
+          - heading "Реклоузеры" [level=3] [ref=e74]
+          - paragraph [ref=e75]: Автоматические пункты секционирования К-123К и К-123С для защиты воздушных ЛЭП 6–10 кВ
+        - 'link "10 НКУ / ВРУ / ГРЩ / ЩО НКУ / ВРУ / ГРЩ / ЩО Низковольтное распределительное оборудование: НКУ QUBE, ВРУ-1/2/3, ГРЩ, щиты освещения ЩО-70 и ОЩВ" [ref=e76] [cursor=pointer]':
+          - /url: /catalog/nku-vru-grshch/
+          - generic [ref=e77]: "10"
+          - img "НКУ / ВРУ / ГРЩ / ЩО" [ref=e79]
+          - heading "НКУ / ВРУ / ГРЩ / ЩО" [level=3] [ref=e80]
+          - paragraph [ref=e81]: "Низковольтное распределительное оборудование: НКУ QUBE, ВРУ-1/2/3, ГРЩ, щиты освещения ЩО-70 и ОЩВ"
+        - link "11 БСК / ФКУ БСК / ФКУ Батареи статических конденсаторов TBB и фильтрокомпенсирующие устройства TAL 6–220 кВ" [ref=e82] [cursor=pointer]:
+          - /url: /catalog/bsk-fku/
+          - generic [ref=e83]: "11"
+          - img "БСК / ФКУ" [ref=e85]
+          - heading "БСК / ФКУ" [level=3] [ref=e86]
+          - paragraph [ref=e87]: Батареи статических конденсаторов TBB и фильтрокомпенсирующие устройства TAL 6–220 кВ
+        - link "12 Шинные опоры Шинные опоры Опоры шинные серии BBS для наружной установки 110, 220, 330 и 500 кВ" [ref=e88] [cursor=pointer]:
+          - /url: /catalog/shinnye-opory/
+          - generic [ref=e89]: "12"
+          - img "Шинные опоры" [ref=e91]
+          - heading "Шинные опоры" [level=3] [ref=e92]
+          - paragraph [ref=e93]: Опоры шинные серии BBS для наружной установки 110, 220, 330 и 500 кВ
+        - link "13 Шкафы автоматики / РЗА Шкафы автоматики / РЗА Микропроцессорные устройства БМРЗ, шкафы РЗА ШЭ-МТ, дуговая защита ДУГА-МТ, БАВР/АВР, ПО" [ref=e94] [cursor=pointer]:
+          - /url: /catalog/shkafy-avtomatiki-rza/
+          - generic [ref=e95]: "13"
+          - img "Шкафы автоматики / РЗА" [ref=e97]
+          - heading "Шкафы автоматики / РЗА" [level=3] [ref=e98]
+          - paragraph [ref=e99]: Микропроцессорные устройства БМРЗ, шкафы РЗА ШЭ-МТ, дуговая защита ДУГА-МТ, БАВР/АВР, ПО
+        - link "14 ШОТ / СОПТ ШОТ / СОПТ Системы оперативного постоянного тока СОПТ-МТ, шкафы ШОТ-МТ, ШАБ-МТ, блоки питания" [ref=e100] [cursor=pointer]:
+          - /url: /catalog/shot-sopt/
+          - generic [ref=e101]: "14"
+          - img "ШОТ / СОПТ" [ref=e103]
+          - heading "ШОТ / СОПТ" [level=3] [ref=e104]
+          - paragraph [ref=e105]: Системы оперативного постоянного тока СОПТ-МТ, шкафы ШОТ-МТ, ШАБ-МТ, блоки питания
+        - link "15 Системы связи и телемеханики Системы связи и телемеханики Мультиплексоры SDH/PDH MP800 и MP1000, шкафы ВЧ-связи, ЦСПИ, РРЛ, ВОЛС, телемеханика, видеонаблюдение, СКУД" [ref=e106] [cursor=pointer]:
+          - /url: /catalog/sistemy-svyazi/
+          - generic [ref=e107]: "15"
+          - img "Системы связи и телемеханики" [ref=e109]
+          - heading "Системы связи и телемеханики" [level=3] [ref=e110]
+          - paragraph [ref=e111]: Мультиплексоры SDH/PDH MP800 и MP1000, шкафы ВЧ-связи, ЦСПИ, РРЛ, ВОЛС, телемеханика, видеонаблюдение, СКУД
+        - link "16 Силовые трансформаторы Силовые трансформаторы Масляные и сухие силовые трансформаторы и трансформаторы собственных нужд мощностью до 2500 кВА до 220 кВ" [ref=e112] [cursor=pointer]:
+          - /url: /catalog/silovye-transformatory/
+          - generic [ref=e113]: "16"
+          - img "Силовые трансформаторы" [ref=e115]
+          - heading "Силовые трансформаторы" [level=3] [ref=e116]
+          - paragraph [ref=e117]: Масляные и сухие силовые трансформаторы и трансформаторы собственных нужд мощностью до 2500 кВА до 220 кВ
+        - link "17 ОПН / Ограничители перенапряжений ОПН / Ограничители перенапряжений Нелинейные ограничители перенапряжений для защиты оборудования подстанций и ЛЭП от грозовых и коммутационных перенапряжений" [ref=e118] [cursor=pointer]:
+          - /url: /catalog/opn-ogranichiteli/
+          - generic [ref=e119]: "17"
+          - img "ОПН / Ограничители перенапряжений" [ref=e121]
+          - heading "ОПН / Ограничители перенапряжений" [level=3] [ref=e122]
+          - paragraph [ref=e123]: Нелинейные ограничители перенапряжений для защиты оборудования подстанций и ЛЭП от грозовых и коммутационных перенапряжений
+        - link "18 Блочно-модульные здания Блочно-модульные здания БМЗ для КТП, РУ 6–35 кВ и общеподстанционных пунктов управления" [ref=e124] [cursor=pointer]:
+          - /url: /catalog/blokirovannye-zdaniya-bmz/
+          - generic [ref=e125]: "18"
+          - img "Блочно-модульные здания" [ref=e127]
+          - heading "Блочно-модульные здания" [level=3] [ref=e128]
+          - paragraph [ref=e129]: БМЗ для КТП, РУ 6–35 кВ и общеподстанционных пунктов управления
+        - link "19 Системы безопасности и жизнеобеспечения Системы безопасности и жизнеобеспечения Охранно-пожарная сигнализация, освещение, электрическое отопление, вентиляция и кондиционирование для подстанций" [ref=e130] [cursor=pointer]:
+          - /url: /catalog/sistemy-bezopasnosti/
+          - generic [ref=e131]: "19"
+          - img "Системы безопасности и жизнеобеспечения" [ref=e133]
+          - heading "Системы безопасности и жизнеобеспечения" [level=3] [ref=e134]
+          - paragraph [ref=e135]: Охранно-пожарная сигнализация, освещение, электрическое отопление, вентиляция и кондиционирование для подстанций
+  - contentinfo [ref=e137]:
+    - generic [ref=e138]:
+      - generic [ref=e139]:
+        - generic [ref=e140]:
+          - generic [ref=e141]:
+            - img "Южный Ветер" [ref=e142]
+            - generic [ref=e143]: Южный Ветер
+          - paragraph [ref=e144]: Поставка электротехнического оборудования до 110/220/500 кВ от ведущих производителей. КТП, КРУ, КРУЭ, высоковольтные выключатели, РЗА и АСУ ТП.
+        - generic [ref=e145]:
+          - generic [ref=e146]: Продукция
+          - list [ref=e147]:
+            - listitem [ref=e148]:
+              - link "КТП / БКТП / РТП" [ref=e149] [cursor=pointer]:
+                - /url: /catalog/ktp-bktp-rtp/
+            - listitem [ref=e150]:
+              - link "КРУ / КСО 6–35 кВ" [ref=e151] [cursor=pointer]:
+                - /url: /catalog/kru-kso-6-35/
+            - listitem [ref=e152]:
+              - link "КРУЭ 110–500 кВ" [ref=e153] [cursor=pointer]:
+                - /url: /catalog/krue-110-500/
+            - listitem [ref=e154]:
+              - link "Высоковольтные выключатели" [ref=e155] [cursor=pointer]:
+                - /url: /catalog/vysokovoltnye-vyklyuchateli/
+            - listitem [ref=e156]:
+              - link "Разъединители / заземлители" [ref=e157] [cursor=pointer]:
+                - /url: /catalog/razediniteli-zazemliteli/
+            - listitem [ref=e158]:
+              - link "Измерительные трансформаторы" [ref=e159] [cursor=pointer]:
+                - /url: /catalog/izmeritelnye-transformatory/
+            - listitem [ref=e160]:
+              - link "Высоковольтные вводы" [ref=e161] [cursor=pointer]:
+                - /url: /catalog/vysokovoltnye-vvody/
+            - listitem [ref=e162]:
+              - link "Токопроводы / шинопроводы" [ref=e163] [cursor=pointer]:
+                - /url: /catalog/tokoprovody-shinoprovody/
+            - listitem [ref=e164]:
+              - link "Реклоузеры" [ref=e165] [cursor=pointer]:
+                - /url: /catalog/reklouzery/
+            - listitem [ref=e166]:
+              - link "НКУ / ВРУ / ГРЩ / ЩО" [ref=e167] [cursor=pointer]:
+                - /url: /catalog/nku-vru-grshch/
+            - listitem [ref=e168]:
+              - link "БСК / ФКУ" [ref=e169] [cursor=pointer]:
+                - /url: /catalog/bsk-fku/
+            - listitem [ref=e170]:
+              - link "Шинные опоры" [ref=e171] [cursor=pointer]:
+                - /url: /catalog/shinnye-opory/
+            - listitem [ref=e172]:
+              - link "Шкафы автоматики / РЗА" [ref=e173] [cursor=pointer]:
+                - /url: /catalog/shkafy-avtomatiki-rza/
+            - listitem [ref=e174]:
+              - link "ШОТ / СОПТ" [ref=e175] [cursor=pointer]:
+                - /url: /catalog/shot-sopt/
+            - listitem [ref=e176]:
+              - link "Системы связи и телемеханики" [ref=e177] [cursor=pointer]:
+                - /url: /catalog/sistemy-svyazi/
+            - listitem [ref=e178]:
+              - link "Силовые трансформаторы" [ref=e179] [cursor=pointer]:
+                - /url: /catalog/silovye-transformatory/
+            - listitem [ref=e180]:
+              - link "ОПН / Ограничители перенапряжений" [ref=e181] [cursor=pointer]:
+                - /url: /catalog/opn-ogranichiteli/
+            - listitem [ref=e182]:
+              - link "Блочно-модульные здания" [ref=e183] [cursor=pointer]:
+                - /url: /catalog/blokirovannye-zdaniya-bmz/
+            - listitem [ref=e184]:
+              - link "Системы безопасности и жизнеобеспечения" [ref=e185] [cursor=pointer]:
+                - /url: /catalog/sistemy-bezopasnosti/
+        - generic [ref=e186]:
+          - generic [ref=e187]: Компания
+          - list [ref=e188]:
+            - listitem [ref=e189]:
+              - link "О компании" [ref=e190] [cursor=pointer]:
+                - /url: /pages/about.html
+            - listitem [ref=e191]:
+              - link "Импортозамещение" [ref=e192] [cursor=pointer]:
+                - /url: /pages/importozameshchenie.html
+            - listitem [ref=e193]:
+              - link "Отраслевые решения" [ref=e194] [cursor=pointer]:
+                - /url: /pages/otraslevye-resheniya.html
+            - listitem [ref=e195]:
+              - link "Сертификаты" [ref=e196] [cursor=pointer]:
+                - /url: /pages/sertifikaty.html
+        - generic [ref=e197]:
+          - generic [ref=e198]: Контакты
+          - list [ref=e199]:
+            - listitem [ref=e200]: "Тел: +7 (XXX) XXX-XX-XX"
+            - listitem [ref=e201]: "Email: info@example.com"
+            - listitem [ref=e202]:
+              - link "Все контакты" [ref=e203] [cursor=pointer]:
+                - /url: /pages/contacts.html
+      - generic [ref=e204]:
+        - paragraph [ref=e205]: © 2025 ООО «Южный Ветер». Все права защищены.
+        - paragraph [ref=e206]:
+          - link "Политика конфиденциальности" [ref=e207] [cursor=pointer]:
+            - /url: /seo/privacy.html

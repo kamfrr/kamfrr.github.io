@@ -1,0 +1,7 @@
+- generic [ref=e3]:
+  - heading "Password protected site" [level=1] [ref=e5]
+  - generic [ref=e6]:
+    - paragraph [ref=e7]: Please enter your password to get access.
+    - generic [ref=e8]:
+      - textbox "Password" [active] [ref=e9]
+      - button "Submit" [ref=e10]

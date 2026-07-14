@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Купить с доставкой | Южный Ветер</title>
+  <meta name="description" content="Цена, характеристики, срок поставки. Поставки по ГОСТ. Доставка по РФ. Закажите расчет!">
+  <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+  <link rel="canonical" href="/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/components.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <script src="/js/categories.js" defer></script>
+  <script src="/js/products-data.js" defer></script>
+  <script src="/js/products-extra.js" defer></script>
+  <script src="/js/components.js" defer></script>
+  <script src="/js/product-page.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <div class="breadcrumbs" id="breadcrumbs"><div class="container"><a href="/">Главная</a> <span>/</span> <a href="/catalog/">Продукция</a> <span>/</span> <a href="" id="bc-category">Категория</a> <span>/</span> <span id="bc-product">Товар</span></div></div>
+    <section class="section">
+      <div class="container">
+        <h1>Товар — купить с доставкой</h1>
+        <div style="margin: var(--space-8) 0;">
+          <div style="aspect-ratio: 16/9; background: var(--color-bg-alt); border-radius: var(--radius-xl); display: flex; align-items: center; justify-content: center; color: var(--color-text-muted); font-size: var(--font-size-sm);">
+            Фото продукции
+          </div>
+        </div>
+        <div style="margin-top: var(--space-10);">
+          <h2>Описание</h2>
+          <div id="product-description" style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed);"></div>
+        </div>
+        <div style="margin-top: var(--space-10);">
+          <h2>Преимущества</h2>
+          <ul id="product-advantages" style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); padding-left: var(--space-6);"></ul>
+        </div>
+        <div style="margin-top: var(--space-10);">
+          <h2>Технические характеристики</h2>
+          <div class="table-wrap">
+            <table class="table">
+              <tr><th>Параметр</th><th>Значение</th></tr>
+              <tbody id="product-specs"></tbody>
+            </table>
+          </div>
+        </div>
+        <div style="margin-top: var(--space-10);">
+          <h2>Сферы применения</h2>
+          <ul id="product-applications" style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); padding-left: var(--space-6);"></ul>
+        </div>
+        <div style="margin-top: var(--space-10);">
+        </div>
+        <div style="margin-top: var(--space-10);">
+          <h2>Сопутствующее оборудование</h2>
+          <div id="related-products" class="grid grid-sm-2 grid-md-3"></div>
+        </div>
+        <div style="margin-top: var(--space-10); padding: var(--space-8); background: var(--color-bg-alt); border-radius: var(--radius-xl); text-align: center;">
+          <h2 style="margin-bottom: var(--space-4);">Заказать оборудование</h2>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--space-6);">Оставьте заявку — наш инженер свяжется с вами в течение 2 часов</p>
+          <a href="/pages/contacts.html" class="btn btn-primary btn-large">Получить КП</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const path = window.location.pathname;
+      const parts = path.split('/').filter(Boolean);
+      if (parts.length >= 3 && parts[0] === 'catalog') {
+        const category = parts[1];
+        const product = parts[2];
+        if (typeof initProductPage === 'function') {
+          initProductPage(category, product);
+        }
+        const catLink = document.getElementById('bc-category');
+        const catName = { ktp: 'КТП', vru: 'ВРУ', kso: 'КСО / КРУ', 'shkafy-avtomatiki': 'Шкафы автоматики', shot: 'ШОТ', sho: 'ЩО-70' }[category];
+        if (catLink) { catLink.href = '/catalog/' + category + '/'; catLink.textContent = catName || category; }
+      }
+    });
+  </script>
+</body>
+</html>

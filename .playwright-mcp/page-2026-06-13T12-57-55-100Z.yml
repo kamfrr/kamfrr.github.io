@@ -1,0 +1,150 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Южный Ветер Южный Ветер" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Южный Ветер" [ref=e5]
+        - generic [ref=e6]: Южный Ветер
+      - button "Открыть меню" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - link "Главная" [ref=e14] [cursor=pointer]:
+        - /url: /
+      - text: /
+      - link "Продукция" [ref=e15] [cursor=pointer]:
+        - /url: /catalog/
+      - text: /
+      - link "КТП / БКТП / РТП" [ref=e16] [cursor=pointer]:
+        - /url: /catalog/ktp-bktp-rtp/
+      - text: / БКТП 40–3150 кВА
+    - generic [ref=e18]:
+      - heading "БКТП 40–3150 кВА — купить с доставкой" [level=1] [ref=e19]
+      - generic [ref=e20]: Мосэлектрощит
+      - paragraph [ref=e21]: Комплектные трансформаторные подстанции в бетонном корпусе мощностью от 40 до 3150 кВА для сетей 6/10/20/0,4 кВ. Полная заводская готовность, модульный принцип, срок службы более 25 лет.
+      - heading "Технические характеристики" [level=2] [ref=e22]
+      - table [ref=e24]:
+        - rowgroup [ref=e25]:
+          - row "Параметр Значение" [ref=e26]:
+            - columnheader "Параметр" [ref=e27]
+            - columnheader "Значение" [ref=e28]
+          - row "Мощность, кВА 40 – 3150" [ref=e29]:
+            - cell "Мощность, кВА" [ref=e30]
+            - cell "40 – 3150" [ref=e31]
+          - row "Напряжение ВН, кВ 6; 10; 20" [ref=e32]:
+            - cell "Напряжение ВН, кВ" [ref=e33]
+            - cell "6; 10; 20" [ref=e34]
+          - row "Напряжение НН, кВ 0,4" [ref=e35]:
+            - cell "Напряжение НН, кВ" [ref=e36]
+            - cell "0,4" [ref=e37]
+          - row "Ток сборных шин НН, А до 6300" [ref=e38]:
+            - cell "Ток сборных шин НН, А" [ref=e39]
+            - cell "до 6300" [ref=e40]
+      - heading "Преимущества" [level=2] [ref=e41]
+      - list [ref=e42]:
+        - listitem [ref=e43]: Полная заводская готовность
+        - listitem [ref=e44]: Модульный принцип
+        - listitem [ref=e45]: Возможность применения сухих и масляных трансформаторов
+      - heading "Области применения" [level=2] [ref=e46]
+      - list [ref=e47]:
+        - listitem [ref=e48]: Промышленность
+        - listitem [ref=e49]: ЖКХ
+        - listitem [ref=e50]: Нефтегаз
+        - listitem [ref=e51]: Коттеджные посёлки
+      - link "Получить коммерческое предложение" [ref=e53] [cursor=pointer]:
+        - /url: /pages/contacts.html
+  - contentinfo [ref=e55]:
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e59]:
+            - img "Южный Ветер" [ref=e60]
+            - generic [ref=e61]: Южный Ветер
+          - paragraph [ref=e62]: Поставка электротехнического оборудования до 110/220/500 кВ от ведущих производителей. КТП, КРУ, КРУЭ, высоковольтные выключатели, РЗА и АСУ ТП.
+        - generic [ref=e63]:
+          - generic [ref=e64]: Продукция
+          - list [ref=e65]:
+            - listitem [ref=e66]:
+              - link "КТП / БКТП / РТП" [ref=e67] [cursor=pointer]:
+                - /url: /catalog/ktp-bktp-rtp/
+            - listitem [ref=e68]:
+              - link "КРУ / КСО 6–35 кВ" [ref=e69] [cursor=pointer]:
+                - /url: /catalog/kru-kso-6-35/
+            - listitem [ref=e70]:
+              - link "КРУЭ 110–500 кВ" [ref=e71] [cursor=pointer]:
+                - /url: /catalog/krue-110-500/
+            - listitem [ref=e72]:
+              - link "Высоковольтные выключатели" [ref=e73] [cursor=pointer]:
+                - /url: /catalog/vysokovoltnye-vyklyuchateli/
+            - listitem [ref=e74]:
+              - link "Разъединители / заземлители" [ref=e75] [cursor=pointer]:
+                - /url: /catalog/razediniteli-zazemliteli/
+            - listitem [ref=e76]:
+              - link "Измерительные трансформаторы" [ref=e77] [cursor=pointer]:
+                - /url: /catalog/izmeritelnye-transformatory/
+            - listitem [ref=e78]:
+              - link "Высоковольтные вводы" [ref=e79] [cursor=pointer]:
+                - /url: /catalog/vysokovoltnye-vvody/
+            - listitem [ref=e80]:
+              - link "Токопроводы / шинопроводы" [ref=e81] [cursor=pointer]:
+                - /url: /catalog/tokoprovody-shinoprovody/
+            - listitem [ref=e82]:
+              - link "Реклоузеры" [ref=e83] [cursor=pointer]:
+                - /url: /catalog/reklouzery/
+            - listitem [ref=e84]:
+              - link "НКУ / ВРУ / ГРЩ / ЩО" [ref=e85] [cursor=pointer]:
+                - /url: /catalog/nku-vru-grshch/
+            - listitem [ref=e86]:
+              - link "БСК / ФКУ" [ref=e87] [cursor=pointer]:
+                - /url: /catalog/bsk-fku/
+            - listitem [ref=e88]:
+              - link "Шинные опоры" [ref=e89] [cursor=pointer]:
+                - /url: /catalog/shinnye-opory/
+            - listitem [ref=e90]:
+              - link "Шкафы автоматики / РЗА" [ref=e91] [cursor=pointer]:
+                - /url: /catalog/shkafy-avtomatiki-rza/
+            - listitem [ref=e92]:
+              - link "ШОТ / СОПТ" [ref=e93] [cursor=pointer]:
+                - /url: /catalog/shot-sopt/
+            - listitem [ref=e94]:
+              - link "Системы связи и телемеханики" [ref=e95] [cursor=pointer]:
+                - /url: /catalog/sistemy-svyazi/
+            - listitem [ref=e96]:
+              - link "Силовые трансформаторы" [ref=e97] [cursor=pointer]:
+                - /url: /catalog/silovye-transformatory/
+            - listitem [ref=e98]:
+              - link "ОПН / Ограничители перенапряжений" [ref=e99] [cursor=pointer]:
+                - /url: /catalog/opn-ogranichiteli/
+            - listitem [ref=e100]:
+              - link "Блочно-модульные здания" [ref=e101] [cursor=pointer]:
+                - /url: /catalog/blokirovannye-zdaniya-bmz/
+            - listitem [ref=e102]:
+              - link "Системы безопасности и жизнеобеспечения" [ref=e103] [cursor=pointer]:
+                - /url: /catalog/sistemy-bezopasnosti/
+        - generic [ref=e104]:
+          - generic [ref=e105]: Компания
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - link "О компании" [ref=e108] [cursor=pointer]:
+                - /url: /pages/about.html
+            - listitem [ref=e109]:
+              - link "Импортозамещение" [ref=e110] [cursor=pointer]:
+                - /url: /pages/importozameshchenie.html
+            - listitem [ref=e111]:
+              - link "Отраслевые решения" [ref=e112] [cursor=pointer]:
+                - /url: /pages/otraslevye-resheniya.html
+            - listitem [ref=e113]:
+              - link "Сертификаты" [ref=e114] [cursor=pointer]:
+                - /url: /pages/sertifikaty.html
+        - generic [ref=e115]:
+          - generic [ref=e116]: Контакты
+          - list [ref=e117]:
+            - listitem [ref=e118]: "Тел: +7 (XXX) XXX-XX-XX"
+            - listitem [ref=e119]: "Email: info@example.com"
+            - listitem [ref=e120]:
+              - link "Все контакты" [ref=e121] [cursor=pointer]:
+                - /url: /pages/contacts.html
+      - generic [ref=e122]:
+        - paragraph [ref=e123]: © 2025 ООО «Южный Ветер». Все права защищены.
+        - paragraph [ref=e124]:
+          - link "Политика конфиденциальности" [ref=e125] [cursor=pointer]:
+            - /url: /seo/privacy.html

@@ -1,0 +1,179 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Южный Ветер Южный Ветер" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Южный Ветер" [ref=e5]
+        - generic [ref=e6]: Южный Ветер
+      - button "Открыть меню" [ref=e7] [cursor=pointer]
+  - main [ref=e11]:
+    - generic [ref=e13]:
+      - link "Главная" [ref=e14] [cursor=pointer]:
+        - /url: /
+      - text: /
+      - link "Продукция" [ref=e15] [cursor=pointer]:
+        - /url: /catalog/
+      - text: / КРУЭ 110–500 кВ
+    - generic [ref=e17]:
+      - heading "Комплектные распределительные устройства с элегазовой изоляцией — купить с доставкой" [level=1] [ref=e18]
+      - paragraph [ref=e19]: КРУЭ серии LZ для номинального напряжения 110, 220, 330 и 500 кВ. Элегазовая изоляция, высокая надёжность
+      - generic [ref=e20]:
+        - link "КРУЭ-LZ 110 ЛЗВО КРУЭ-LZ 110 Комплектное распределительное устройство с элегазовой изоляцией на номинальное напряжение 110 кВ...." [ref=e21] [cursor=pointer]:
+          - /url: /catalog/krue-110-500/krue-lz-110/
+          - img "КРУЭ-LZ 110" [ref=e23]
+          - generic [ref=e24]:
+            - generic [ref=e25]: ЛЗВО
+            - heading "КРУЭ-LZ 110" [level=3] [ref=e26]
+            - paragraph [ref=e27]: Комплектное распределительное устройство с элегазовой изоляцией на номинальное напряжение 110 кВ....
+        - link "КРУЭ-LZ 220 ЛЗВО КРУЭ-LZ 220 КРУЭ на номинальное напряжение 220 кВ. Трёхфазное и однофазное исполнение...." [ref=e28] [cursor=pointer]:
+          - /url: /catalog/krue-110-500/krue-lz-220/
+          - img "КРУЭ-LZ 220" [ref=e30]
+          - generic [ref=e31]:
+            - generic [ref=e32]: ЛЗВО
+            - heading "КРУЭ-LZ 220" [level=3] [ref=e33]
+            - paragraph [ref=e34]: КРУЭ на номинальное напряжение 220 кВ. Трёхфазное и однофазное исполнение....
+        - link "КРУЭ-LZ 330 ЛЗВО КРУЭ-LZ 330 КРУЭ на номинальное напряжение 330 кВ. Однофазное исполнение для внутренней установки...." [ref=e35] [cursor=pointer]:
+          - /url: /catalog/krue-110-500/krue-lz-330/
+          - img "КРУЭ-LZ 330" [ref=e37]
+          - generic [ref=e38]:
+            - generic [ref=e39]: ЛЗВО
+            - heading "КРУЭ-LZ 330" [level=3] [ref=e40]
+            - paragraph [ref=e41]: КРУЭ на номинальное напряжение 330 кВ. Однофазное исполнение для внутренней установки....
+        - link "КРУЭ-LZ 500 ЛЗВО КРУЭ-LZ 500 КРУЭ на номинальное напряжение 500 кВ. Однофазное исполнение для внутренней установки...." [ref=e42] [cursor=pointer]:
+          - /url: /catalog/krue-110-500/krue-lz-500/
+          - img "КРУЭ-LZ 500" [ref=e44]
+          - generic [ref=e45]:
+            - generic [ref=e46]: ЛЗВО
+            - heading "КРУЭ-LZ 500" [level=3] [ref=e47]
+            - paragraph [ref=e48]: КРУЭ на номинальное напряжение 500 кВ. Однофазное исполнение для внутренней установки....
+        - link "КРУЭ-Моноблок К-131-Э Мосэлектрощит КРУЭ-Моноблок К-131-Э Компактное элегазовое устройство для сетей 6/10/20 кВ. Номинальный ток 630 А...." [ref=e49] [cursor=pointer]:
+          - /url: /catalog/krue-110-500/monoblok-k131-e/
+          - img "КРУЭ-Моноблок К-131-Э" [ref=e51]
+          - generic [ref=e52]:
+            - generic [ref=e53]: Мосэлектрощит
+            - heading "КРУЭ-Моноблок К-131-Э" [level=3] [ref=e54]
+            - paragraph [ref=e55]: Компактное элегазовое устройство для сетей 6/10/20 кВ. Номинальный ток 630 А....
+        - link "КРУЭ-Моноблок К-134 «ПРИЗМА» Мосэлектрощит КРУЭ-Моноблок К-134 «ПРИЗМА» КРУЭ с элегазовой изоляцией для сетей 6/10/20 кВ с вакуумным выключателем...." [ref=e56] [cursor=pointer]:
+          - /url: /catalog/krue-110-500/monoblok-k134-prizma/
+          - img "КРУЭ-Моноблок К-134 «ПРИЗМА»" [ref=e58]
+          - generic [ref=e59]:
+            - generic [ref=e60]: Мосэлектрощит
+            - heading "КРУЭ-Моноблок К-134 «ПРИЗМА»" [level=3] [ref=e61]
+            - paragraph [ref=e62]: КРУЭ с элегазовой изоляцией для сетей 6/10/20 кВ с вакуумным выключателем....
+      - generic [ref=e63]:
+        - heading "Виды оборудования" [level=2] [ref=e64]
+        - list [ref=e65]:
+          - listitem [ref=e66]:
+            - link "КРУЭ-LZ 110" [ref=e67] [cursor=pointer]:
+              - /url: /catalog/krue-110-500/krue-lz-110/
+          - listitem [ref=e68]:
+            - link "КРУЭ-LZ 220" [ref=e69] [cursor=pointer]:
+              - /url: /catalog/krue-110-500/krue-lz-220/
+          - listitem [ref=e70]:
+            - link "КРУЭ-LZ 330" [ref=e71] [cursor=pointer]:
+              - /url: /catalog/krue-110-500/krue-lz-330/
+          - listitem [ref=e72]:
+            - link "КРУЭ-LZ 500" [ref=e73] [cursor=pointer]:
+              - /url: /catalog/krue-110-500/krue-lz-500/
+          - listitem [ref=e74]:
+            - link "КРУЭ-Моноблок К-131-Э" [ref=e75] [cursor=pointer]:
+              - /url: /catalog/krue-110-500/monoblok-k131-e/
+          - listitem [ref=e76]:
+            - link "КРУЭ-Моноблок К-134 «ПРИЗМА»" [ref=e77] [cursor=pointer]:
+              - /url: /catalog/krue-110-500/monoblok-k134-prizma/
+  - contentinfo [ref=e79]:
+    - generic [ref=e80]:
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]:
+            - img "Южный Ветер" [ref=e84]
+            - generic [ref=e85]: Южный Ветер
+          - paragraph [ref=e86]: Поставка электротехнического оборудования до 110/220/500 кВ от ведущих производителей. КТП, КРУ, КРУЭ, высоковольтные выключатели, РЗА и АСУ ТП.
+        - generic [ref=e87]:
+          - generic [ref=e88]: Продукция
+          - list [ref=e89]:
+            - listitem [ref=e90]:
+              - link "КТП / БКТП / РТП" [ref=e91] [cursor=pointer]:
+                - /url: /catalog/ktp-bktp-rtp/
+            - listitem [ref=e92]:
+              - link "КРУ / КСО 6–35 кВ" [ref=e93] [cursor=pointer]:
+                - /url: /catalog/kru-kso-6-35/
+            - listitem [ref=e94]:
+              - link "КРУЭ 110–500 кВ" [ref=e95] [cursor=pointer]:
+                - /url: /catalog/krue-110-500/
+            - listitem [ref=e96]:
+              - link "Высоковольтные выключатели" [ref=e97] [cursor=pointer]:
+                - /url: /catalog/vysokovoltnye-vyklyuchateli/
+            - listitem [ref=e98]:
+              - link "Разъединители / заземлители" [ref=e99] [cursor=pointer]:
+                - /url: /catalog/razediniteli-zazemliteli/
+            - listitem [ref=e100]:
+              - link "Измерительные трансформаторы" [ref=e101] [cursor=pointer]:
+                - /url: /catalog/izmeritelnye-transformatory/
+            - listitem [ref=e102]:
+              - link "Высоковольтные вводы" [ref=e103] [cursor=pointer]:
+                - /url: /catalog/vysokovoltnye-vvody/
+            - listitem [ref=e104]:
+              - link "Токопроводы / шинопроводы" [ref=e105] [cursor=pointer]:
+                - /url: /catalog/tokoprovody-shinoprovody/
+            - listitem [ref=e106]:
+              - link "Реклоузеры" [ref=e107] [cursor=pointer]:
+                - /url: /catalog/reklouzery/
+            - listitem [ref=e108]:
+              - link "НКУ / ВРУ / ГРЩ / ЩО" [ref=e109] [cursor=pointer]:
+                - /url: /catalog/nku-vru-grshch/
+            - listitem [ref=e110]:
+              - link "БСК / ФКУ" [ref=e111] [cursor=pointer]:
+                - /url: /catalog/bsk-fku/
+            - listitem [ref=e112]:
+              - link "Шинные опоры" [ref=e113] [cursor=pointer]:
+                - /url: /catalog/shinnye-opory/
+            - listitem [ref=e114]:
+              - link "Шкафы автоматики / РЗА" [ref=e115] [cursor=pointer]:
+                - /url: /catalog/shkafy-avtomatiki-rza/
+            - listitem [ref=e116]:
+              - link "ШОТ / СОПТ" [ref=e117] [cursor=pointer]:
+                - /url: /catalog/shot-sopt/
+            - listitem [ref=e118]:
+              - link "Системы связи и телемеханики" [ref=e119] [cursor=pointer]:
+                - /url: /catalog/sistemy-svyazi/
+            - listitem [ref=e120]:
+              - link "Силовые трансформаторы" [ref=e121] [cursor=pointer]:
+                - /url: /catalog/silovye-transformatory/
+            - listitem [ref=e122]:
+              - link "ОПН / Ограничители перенапряжений" [ref=e123] [cursor=pointer]:
+                - /url: /catalog/opn-ogranichiteli/
+            - listitem [ref=e124]:
+              - link "Блочно-модульные здания" [ref=e125] [cursor=pointer]:
+                - /url: /catalog/blokirovannye-zdaniya-bmz/
+            - listitem [ref=e126]:
+              - link "Системы безопасности и жизнеобеспечения" [ref=e127] [cursor=pointer]:
+                - /url: /catalog/sistemy-bezopasnosti/
+        - generic [ref=e128]:
+          - generic [ref=e129]: Компания
+          - list [ref=e130]:
+            - listitem [ref=e131]:
+              - link "О компании" [ref=e132] [cursor=pointer]:
+                - /url: /pages/about.html
+            - listitem [ref=e133]:
+              - link "Импортозамещение" [ref=e134] [cursor=pointer]:
+                - /url: /pages/importozameshchenie.html
+            - listitem [ref=e135]:
+              - link "Отраслевые решения" [ref=e136] [cursor=pointer]:
+                - /url: /pages/otraslevye-resheniya.html
+            - listitem [ref=e137]:
+              - link "Сертификаты" [ref=e138] [cursor=pointer]:
+                - /url: /pages/sertifikaty.html
+        - generic [ref=e139]:
+          - generic [ref=e140]: Контакты
+          - list [ref=e141]:
+            - listitem [ref=e142]: "Тел: +7 (XXX) XXX-XX-XX"
+            - listitem [ref=e143]: "Email: info@example.com"
+            - listitem [ref=e144]:
+              - link "Все контакты" [ref=e145] [cursor=pointer]:
+                - /url: /pages/contacts.html
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: © 2025 ООО «Южный Ветер». Все права защищены.
+        - paragraph [ref=e148]:
+          - link "Политика конфиденциальности" [ref=e149] [cursor=pointer]:
+            - /url: /seo/privacy.html
