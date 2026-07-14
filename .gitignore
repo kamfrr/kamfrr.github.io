@@ -1,0 +1,12 @@
+# System files
+.netlify/
+.playwright-mcp/
+node_modules/
+*.log
+
+# Source docs
+*.docx
+*.md
+
+# Private info folder
+инфа/
