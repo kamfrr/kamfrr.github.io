@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/layout.css">
   <script src="/js/components.js" defer></script>
-  <script src="/js/form-handler.js" defer></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -43,7 +42,7 @@
       <div class="container hero-content">
         <div class="reveal">
           <p class="section-eyebrow" style="color: rgba(255,255,255,0.7); margin-bottom: var(--space-4);">Поставщик электротехнического оборудования</p>
-          <h1 class="hero-title">Поставки оборудования <em>до 110/220/500 кВ</em> под ключ</h1>
+          <h1 class="hero-title">Поставки оборудования <em>до 500 кВ</em> под ключ</h1>
           <p class="hero-subtitle">Комплектные трансформаторные подстанции, КРУ и КРУЭ, высоковольтные выключатели и разъединители, токопроводы, шинопроводы, шкафы автоматики и оперативного тока. Прямые поставки от производителей, проектирование, монтаж, сервис.</p>
           <div class="hero-actions">
             <a href="/pages/contacts.html" class="btn btn-primary btn-large">Получить коммерческое предложение</a>
@@ -52,16 +51,17 @@
         </div>
         <div class="hero-stats reveal reveal-delay-2">
           <div class="hero-stat">
-            <div class="hero-stat-value">19</div>
-            <div class="hero-stat-label">категорий оборудования</div>
+            <div class="hero-stat-value">10</div>
+            <div class="hero-stat-label">разделов каталога</div>
           </div>
           <div class="hero-stat">
-            <div class="hero-stat-value">77+</div>
+            <div class="hero-stat-value">33+</div>
             <div class="hero-stat-label">наименований продукции</div>
           </div>
           <div class="hero-stat">
             <div class="hero-stat-value">4</div>
             <div class="hero-stat-label">производителя-партнёра</div>
+            <div style="margin-top: var(--space-2); font-size: var(--font-size-xs); line-height: var(--line-height-relaxed); color: rgba(255, 255, 255, 0.65);">Мосэлектрощит · Energy-H · ЛЗВО · НТЦ «Механотроника»</div>
           </div>
           <div class="hero-stat">
             <div class="hero-stat-value">15</div>
@@ -83,137 +83,81 @@
         <div class="grid grid-sm-2 grid-md-3 stagger-children" style="margin-top: var(--space-12);">
           <a href="/catalog/ktp-bktp-rtp/" class="category-card card">
             <div class="card-media"><span class="card-number">01</span>
-              <img src="/images/suppliers/moselectroshield/img1.png" alt="КТП / БКТП / РТП">
+              <img src="/images/catalog/1/1_1.jpg" alt="КТПБ 35/110/220 кВ">
             </div>
-            <h3 class="card-title">КТП / БКТП / РТП</h3>
-            <p class="card-text">Комплектные трансформаторные подстанции: киосковые, мачтовые, блочные (БКТП), распределительные (РТП, РП) и мобильные модульные (ММПС) до 220 кВ</p>
+            <h3 class="card-title">КТПБ 35/110/220 кВ</h3>
+            <p class="card-text">Комплектные трансформаторные подстанции блочного типа (КТПБ) на класс напряжения 35, 110 и 220 кВ</p>
           </a>
-          <a href="/catalog/kru-kso-6-35/" class="category-card card">
+          <a href="/catalog/oborudovanie-tp-do-500-kv/" class="category-card card">
             <div class="card-media"><span class="card-number">02</span>
-              <img src="/images/suppliers/moselectroshield/nku2.png" alt="КРУ / КСО 6–35 кВ">
+              <img src="/images/catalog/2/2_1.jpg" alt="Оборудование для ТП до 500 кВ">
             </div>
-            <h3 class="card-title">КРУ / КСО 6–35 кВ</h3>
-            <p class="card-text">Ячейки КСО-298, КСО-366, КСО-393 и комплектные распределительные устройства серий К-125, К-128, К-129, К-133, К-130, К-131</p>
+            <h3 class="card-title">Оборудование для ТП до 500 кВ</h3>
+            <p class="card-text">Элегазовые выключатели LTB/DTB 110–220 кВ, разъединители SDF 110–500 кВ, измерительные трансформаторы тока и напряжения</p>
           </a>
           <a href="/catalog/krue-110-500/" class="category-card card">
             <div class="card-media"><span class="card-number">03</span>
-              <img src="/images/suppliers/lzvo/krue.jpg" alt="КРУЭ 110–500 кВ">
+              <img src="/images/catalog/3/3_1.jpg" alt="КРУЭ до 500 кВ">
             </div>
-            <h3 class="card-title">КРУЭ 110–500 кВ</h3>
-            <p class="card-text">Комплектные распределительные устройства с элегазовой изоляцией серии LZ для напряжения 110, 220, 330 и 500 кВ</p>
-          </a>
-          <a href="/catalog/vysokovoltnye-vyklyuchateli/" class="category-card card">
-            <div class="card-media"><span class="card-number">04</span>
-              <img src="/images/suppliers/energyh/vyklyuchateli.jpg" alt="Высоковольтные выключатели">
-            </div>
-            <h3 class="card-title">Высоковольтные выключатели</h3>
-            <p class="card-text">Колонковые (LTB) и баковые (DTB) элегазовые выключатели 110–220 кВ по ГОСТ Р 52565-2006</p>
-          </a>
-          <a href="/catalog/razediniteli-zazemliteli/" class="category-card card">
-            <div class="card-media"><span class="card-number">05</span>
-              <img src="/images/suppliers/energyh/razediniteli.jpg" alt="Разъединители / заземлители">
-            </div>
-            <h3 class="card-title">Разъединители / заземлители</h3>
-            <p class="card-text">Горизонтально-поворотные разъединители SDF 110–500 кВ и полупантографные GW 330–500 кВ</p>
-          </a>
-          <a href="/catalog/izmeritelnye-transformatory/" class="category-card card">
-            <div class="card-media"><span class="card-number">06</span>
-              <img src="/images/suppliers/energyh/transformatory.jpg" alt="Измерительные трансформаторы">
-            </div>
-            <h3 class="card-title">Измерительные трансформаторы</h3>
-            <p class="card-text">Элегазовые трансформаторы тока TG и напряжения ТНГ 110–220 кВ</p>
-          </a>
-          <a href="/catalog/vysokovoltnye-vvody/" class="category-card card">
-            <div class="card-media"><span class="card-number">07</span>
-              <img src="/images/suppliers/energyh/vvody.jpg" alt="Высоковольтные вводы">
-            </div>
-            <h3 class="card-title">Высоковольтные вводы</h3>
-            <p class="card-text">Трансформаторные (BRIT), выключательные (BRIB) и линейные (BRIL) вводы с RIP-изоляцией 35–330 кВ</p>
-          </a>
-          <a href="/catalog/tokoprovody-shinoprovody/" class="category-card card">
-            <div class="card-media"><span class="card-number">08</span>
-              <img src="/images/suppliers/moselectroshield/nku3.png" alt="Токопроводы / шинопроводы">
-            </div>
-            <h3 class="card-title">Токопроводы / шинопроводы</h3>
-            <p class="card-text">Токопроводы ТЗК, ТЭНЕ, Betobar-r, ГИЛ 6–35 кВ и шинопроводы ШЗК, ЭФИБАР 0,4–1 кВ</p>
-          </a>
-          <a href="/catalog/reklouzery/" class="category-card card">
-            <div class="card-media"><span class="card-number">09</span>
-              <img src="/images/suppliers/moselectroshield/reklouzer.jpg" alt="Реклоузеры">
-            </div>
-            <h3 class="card-title">Реклоузеры</h3>
-            <p class="card-text">Автоматические пункты секционирования К-123К и К-123С для защиты воздушных ЛЭП 6–10 кВ</p>
-          </a>
-          <a href="/catalog/nku-vru-grshch/" class="category-card card">
-            <div class="card-media"><span class="card-number">10</span>
-              <img src="/images/suppliers/moselectroshield/nku1.png" alt="НКУ / ВРУ / ГРЩ / ЩО">
-            </div>
-            <h3 class="card-title">НКУ / ВРУ / ГРЩ / ЩО</h3>
-            <p class="card-text">Низковольтное распределительное оборудование: НКУ QUBE, ВРУ-1/2/3, ГРЩ, щиты освещения ЩО-70 и ОЩВ</p>
-          </a>
-          <a href="/catalog/bsk-fku/" class="category-card card">
-            <div class="card-media"><span class="card-number">11</span>
-              <img src="/images/suppliers/energyh/bsk.jpg" alt="БСК / ФКУ">
-            </div>
-            <h3 class="card-title">БСК / ФКУ</h3>
-            <p class="card-text">Батареи статических конденсаторов TBB и фильтрокомпенсирующие устройства TAL 6–220 кВ</p>
-          </a>
-          <a href="/catalog/shinnye-opory/" class="category-card card">
-            <div class="card-media"><span class="card-number">12</span>
-              <img src="/images/suppliers/energyh/opory.jpg" alt="Шинные опоры">
-            </div>
-            <h3 class="card-title">Шинные опоры</h3>
-            <p class="card-text">Опоры шинные серии BBS для наружной установки 110, 220, 330 и 500 кВ</p>
-          </a>
-          <a href="/catalog/shkafy-avtomatiki-rza/" class="category-card card">
-            <div class="card-media"><span class="card-number">13</span>
-              <img src="/images/suppliers/mtrele/shkafy.jpg" alt="Шкафы автоматики / РЗА">
-            </div>
-            <h3 class="card-title">Шкафы автоматики / РЗА</h3>
-            <p class="card-text">Микропроцессорные устройства БМРЗ, шкафы РЗА ШЭ-МТ, дуговая защита ДУГА-МТ, БАВР/АВР, ПО</p>
-          </a>
-          <a href="/catalog/shot-sopt/" class="category-card card">
-            <div class="card-media"><span class="card-number">14</span>
-              <img src="/images/suppliers/mtrele/sopt.jpg" alt="ШОТ / СОПТ">
-            </div>
-            <h3 class="card-title">ШОТ / СОПТ</h3>
-            <p class="card-text">Системы оперативного постоянного тока СОПТ-МТ, шкафы ШОТ-МТ, ШАБ-МТ, блоки питания</p>
-          </a>
-          <a href="/catalog/sistemy-svyazi/" class="category-card card">
-            <div class="card-media"><span class="card-number">15</span>
-              <img src="/images/suppliers/energyh/svyaz.jpg" alt="Системы связи и телемеханики">
-            </div>
-            <h3 class="card-title">Системы связи и телемеханики</h3>
-            <p class="card-text">Мультиплексоры SDH/PDH MP800 и MP1000, шкафы ВЧ-связи, ЦСПИ, РРЛ, ВОЛС, телемеханика, видеонаблюдение, СКУД</p>
+            <h3 class="card-title">КРУЭ до 500 кВ</h3>
+            <p class="card-text">КРУЭ серии LZ для напряжения 110, 220, 330 и 500 кВ, КРУЭ-Моноблоки К-131-Э и К-134 «ПРИЗМА» 6–20 кВ</p>
           </a>
           <a href="/catalog/silovye-transformatory/" class="category-card card">
-            <div class="card-media"><span class="card-number">16</span>
-              <img src="/images/suppliers/moselectroshield/img2.png" alt="Силовые трансформаторы">
+            <div class="card-media"><span class="card-number">04</span>
+              <img src="/images/catalog/4/4_1.jpg" alt="Трансформаторы до 220 кВ">
             </div>
-            <h3 class="card-title">Силовые трансформаторы</h3>
-            <p class="card-text">Масляные и сухие силовые трансформаторы и трансформаторы собственных нужд мощностью до 2500 кВА до 220 кВ</p>
+            <h3 class="card-title">Трансформаторы до 220 кВ</h3>
+            <p class="card-text">Силовые масляные трансформаторы до 220 кВ, масляные ТМГ и сухие трансформаторы до 35 кВ</p>
           </a>
-          <a href="/catalog/opn-ogranichiteli/" class="category-card card">
-            <div class="card-media"><span class="card-number">17</span>
-              <img src="/images/suppliers/energyh/opn.jpg" alt="ОПН / Ограничители перенапряжений">
+          <a href="/catalog/kru-kso-6-35/" class="category-card card">
+            <div class="card-media"><span class="card-number">05</span>
+              <img src="/images/catalog/5/5_1/5_1_classik.png" alt="КРУ до 35 кВ">
             </div>
-            <h3 class="card-title">ОПН / Ограничители перенапряжений</h3>
-            <p class="card-text">Нелинейные ограничители перенапряжений для защиты оборудования подстанций и ЛЭП от грозовых и коммутационных перенапряжений</p>
+            <h3 class="card-title">КРУ до 35 кВ</h3>
+            <p class="card-text">Ячейки КРУ (КСО) 6/10 кВ, ячейки КРУ 20 кВ и ячейки КРУ 35 кВ</p>
+          </a>
+          <a href="/catalog/nku-vru-grshch/" class="category-card card">
+            <div class="card-media"><span class="card-number">06</span>
+              <img src="/images/catalog/6/6_1.png" alt="РУ 0,4 кВ (НКУ)">
+            </div>
+            <h3 class="card-title">РУ 0,4 кВ (НКУ)</h3>
+            <p class="card-text">Шкафы НКУ напряжением 0,4 кВ для приёма и распределения электроэнергии</p>
+          </a>
+        </div>
+        <div class="catalog-extra" id="catalogExtra">
+          <div class="grid grid-sm-2 grid-md-3" style="margin-top: var(--space-6);">
+          <a href="/catalog/tokoprovody-shinoprovody/" class="category-card card">
+            <div class="card-media"><span class="card-number">07</span>
+              <img src="/images/catalog/7/7_1.jpg" alt="Токопроводы и шинопроводы">
+            </div>
+            <h3 class="card-title">Токопроводы и шинопроводы</h3>
+            <p class="card-text">Токопроводы генераторного напряжения ТЭНЕ/ТЭНП, закрытые ТЗК/ТЗКР/ТЗКЭП и шинопроводы закрытые серии ШЗК</p>
+          </a>
+          <a href="/catalog/shkafy-avtomatiki-rza/" class="category-card card">
+            <div class="card-media"><span class="card-number">08</span>
+              <img src="/images/suppliers/mtrele/shkafy.jpg" alt="РЗА и автоматика">
+            </div>
+            <h3 class="card-title">РЗА и автоматика</h3>
+            <p class="card-text">Устройства БМРЗ НТЦ «Механотроника», шкафы РЗА ШЭ-МТ, ДУГА-МТ, БАВР/АВР, СОПТ-МТ, ШОТ-МТ, панели АИИСКУЭ</p>
+          </a>
+          <a href="/catalog/sistemy-svyazi/" class="category-card card">
+            <div class="card-media"><span class="card-number">09</span>
+              <img src="/images/placeholder.svg" alt="Собственное производство">
+            </div>
+            <h3 class="card-title">Собственное производство</h3>
+            <p class="card-text">Шкафы ВЧ-связи, ЦСПИ, РРЛ, ВОЛС, информационная безопасность, видеонаблюдение, СКУД, бесперебойное электропитание</p>
           </a>
           <a href="/catalog/blokirovannye-zdaniya-bmz/" class="category-card card">
-            <div class="card-media"><span class="card-number">18</span>
-              <img src="/images/suppliers/moselectroshield/bktp.png" alt="Блочно-модульные здания">
+            <div class="card-media"><span class="card-number">10</span>
+              <img src="/images/catalog/10/10_1.jpeg" alt="Блочно-модульные здания (БМЗ)">
             </div>
-            <h3 class="card-title">Блочно-модульные здания</h3>
-            <p class="card-text">БМЗ для КТП, РУ 6–35 кВ и общеподстанционных пунктов управления</p>
+            <h3 class="card-title">Блочно-модульные здания (БМЗ)</h3>
+            <p class="card-text">Блочно-модульные ЗРУ, КТП и РТП 6(10)/0,4 кВ, НКУ и общеподстанционные пункты управления полной заводской готовности</p>
           </a>
-          <a href="/catalog/sistemy-bezopasnosti/" class="category-card card">
-            <div class="card-media"><span class="card-number">19</span>
-              <img src="/images/suppliers/moselectroshield/nku.png" alt="Системы безопасности и жизнеобеспечения">
-            </div>
-            <h3 class="card-title">Системы безопасности и жизнеобеспечения</h3>
-            <p class="card-text">Охранно-пожарная сигнализация, освещение, электрическое отопление, вентиляция и кондиционирование для подстанций</p>
-          </a>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: var(--space-10);">
+          <button type="button" class="btn btn-secondary btn-large" id="catalogToggle" onclick="toggleCatalog()" aria-expanded="false">Показать весь каталог</button>
         </div>
       </div>
     </section>
@@ -292,20 +236,6 @@
       </div>
     </section>
 
-    <!-- Import substitution -->
-    <section class="section">
-      <div class="container">
-        <div class="cta-section reveal">
-          <div class="container" style="text-align: center;">
-            <p class="section-eyebrow" style="color: rgba(255,255,255,0.8); margin-bottom: var(--space-4);">Импортозамещение</p>
-            <h2 class="section-title">Отечественные аналоги импортного электрооборудования</h2>
-            <p class="section-subtitle" style="margin: 0 auto var(--space-8);">Поставляем отечественные аналоги частотных преобразователей ABB, Schneider, Siemens, Danfoss. Замена импортного оборудования с сохранением всех технических характеристик. Полное техническое сопровождение перехода.</p>
-            <a href="/pages/importozameshchenie.html" class="btn btn-secondary btn-large" style="border-color: rgba(255,255,255,0.5); color: white; background: rgba(255,255,255,0.1);">Получить таблицу аналогов</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Industries -->
     <section class="section section-alt">
       <div class="container">
@@ -316,102 +246,47 @@
           <p class="section-subtitle" style="margin: var(--space-4) auto 0;">Адаптируем оборудование под требования вашей отрасли</p>
         </div>
         <div class="grid grid-sm-2 stagger-children" style="margin-top: var(--space-12);">
-          <div class="card">
+          <div class="card card-photo" style="background-image: url('/images/catalog/1/1_1.jpg');">
             <h3 class="card-title">Нефть и газ</h3>
-            <p class="card-text">КТП, КРУ, КСО, НКУ, ВРУ для НПЗ, буровых, трубопроводов. Взрывозащищенное исполнение, сертификаты соответствия требованиям отрасли.</p>
+            <p class="card-text">КТПБ, КРУ, КРУЭ, НКУ для НПЗ, буровых, трубопроводов. Взрывозащищенное исполнение, сертификаты соответствия требованиям отрасли.</p>
           </div>
-          <div class="card">
+          <div class="card card-photo" style="background-image: url('/images/catalog/2/2_3.jpg');">
             <h3 class="card-title">Энергетика</h3>
             <p class="card-text">Подстанции 6–500 кВ, ячейки КСО/КРУ, КРУЭ, высоковольтные выключатели и разъединители, шкафы РЗА на базе БМРЗ. Полный комплект оборудования для энергообъектов.</p>
           </div>
-          <div class="card">
+          <div class="card card-photo" style="background-image: url('/images/catalog/4/4_3.jpg');">
             <h3 class="card-title">Промышленность</h3>
-            <p class="card-text">НКУ, ВРУ, ГРЩ, щиты освещения, шкафы автоматики и РЗА для заводов. Частотные преобразователи, системы АСУ ТП.</p>
+            <p class="card-text">НКУ, шкафы автоматики и РЗА для заводов. Системы АСУ ТП и оперативного тока.</p>
           </div>
-          <div class="card">
+          <div class="card card-photo" style="background-image: url('/images/catalog/10/10_1.jpeg');">
             <h3 class="card-title">ЖКХ и городские сети</h3>
-            <p class="card-text">БКТП, РТП, ВРУ, ГРЩ, щиты освещения ЩО-70 для микрорайонов. Надежное оборудование для коммунальной инфраструктуры.</p>
+            <p class="card-text">Блочно-модульные КТП, РТП и НКУ для микрорайонов. Надежное оборудование для коммунальной инфраструктуры.</p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <section class="section">
-      <div class="container">
-        <div class="section-header center reveal">
-          <p class="section-eyebrow">Нам доверяют</p>
-          <div class="section-line"></div>
-          <h2 class="section-title" style="margin-bottom: 0;">Сотни объектов по всей России</h2>
-          <p class="section-subtitle" style="margin: var(--space-4) auto 0;">Оборудование поставлено на объекты энергетики, промышленности и инфраструктуры</p>
-        </div>
-        <div class="grid grid-lg-6 grid-md-3 grid-sm-2 stagger-children" style="align-items: center; margin-top: var(--space-12);">
-          <div style="height: 70px; background: linear-gradient(135deg, var(--color-bg-alt), #f1f5f9); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-xs); color: var(--color-text-muted); font-weight: var(--font-weight-medium);">Логотип клиента 1</div>
-          <div style="height: 70px; background: linear-gradient(135deg, var(--color-bg-alt), #f1f5f9); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-xs); color: var(--color-text-muted); font-weight: var(--font-weight-medium);">Логотип клиента 2</div>
-          <div style="height: 70px; background: linear-gradient(135deg, var(--color-bg-alt), #f1f5f9); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-xs); color: var(--color-text-muted); font-weight: var(--font-weight-medium);">Логотип клиента 3</div>
-          <div style="height: 70px; background: linear-gradient(135deg, var(--color-bg-alt), #f1f5f9); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-xs); color: var(--color-text-muted); font-weight: var(--font-weight-medium);">Логотип клиента 4</div>
-          <div style="height: 70px; background: linear-gradient(135deg, var(--color-bg-alt), #f1f5f9); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-xs); color: var(--color-text-muted); font-weight: var(--font-weight-medium);">Логотип клиента 5</div>
-          <div style="height: 70px; background: linear-gradient(135deg, var(--color-bg-alt), #f1f5f9); border-radius: var(--radius-lg); display: flex; align-items: center; justify-content: center; font-size: var(--font-size-xs); color: var(--color-text-muted); font-weight: var(--font-weight-medium);">Логотип клиента 6</div>
         </div>
       </div>
     </section>
 
     <!-- CTA -->
-    <section class="section section-alt">
+    <section class="section section-photo" style="background-image: url('/images/catalog/2/2_2.jpg');">
       <div class="container" style="max-width: 720px; text-align: center;">
         <div class="reveal">
           <p class="section-eyebrow">Консультация инженера</p>
           <h2 class="section-title">Получить коммерческое предложение</h2>
-          <p class="section-subtitle" style="margin: var(--space-4) auto var(--space-8);">Оставьте заявку — наш инженер свяжется с вами в течение 2 часов и подготовит расчет с учетом ваших требований.</p>
+          <p class="section-subtitle" style="margin: var(--space-4) auto var(--space-8);">Свяжитесь с нами — наш инженер ответит в течение 2 часов и подготовит расчет с учетом ваших требований.</p>
         </div>
-        <form class="reveal reveal-delay-1" data-form action="/api/send-form.php" method="POST" style="background: white; padding: var(--space-8); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg); text-align: left;">
-          <input type="text" name="website" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off">
-          <input type="hidden" name="page" value="Главная страница">
-          <div class="grid grid-sm-2" style="gap: var(--space-4);">
-            <div class="form-group" style="margin-bottom: 0;">
-              <label class="form-label">Ваше имя</label>
-              <input type="text" name="name" class="form-input" placeholder="Иван Иванов" required>
+        <div class="reveal reveal-delay-1" style="background: white; padding: var(--space-8); border-radius: var(--radius-2xl); border: 1px solid var(--color-border); box-shadow: var(--shadow-lg);">
+          <div class="grid grid-sm-2" style="gap: var(--space-6);">
+            <div>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2);">Телефон</p>
+              <a href="tel:+7XXXXXXXXXX" style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text); text-decoration: none;">+7 (XXX) XXX-XX-XX</a>
             </div>
-            <div class="form-group" style="margin-bottom: 0;">
-              <label class="form-label">Телефон</label>
-              <input type="tel" name="phone" class="form-input" placeholder="+7 (___) ___-__-__" required>
+            <div>
+              <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2);">Email</p>
+              <a href="mailto:info@example.com" style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text); text-decoration: none;">info@example.com</a>
             </div>
           </div>
-          <div class="form-group">
-            <label class="form-label">Email</label>
-            <input type="email" name="email" class="form-input" placeholder="info@company.ru">
-          </div>
-          <div class="form-group">
-            <label class="form-label">Тип оборудования</label>
-            <select name="type" class="form-select">
-              <option value="">Выберите категорию</option>
-              <option>КТП / БКТП / РТП</option>
-              <option>КРУ / КСО 6–35 кВ</option>
-              <option>КРУЭ 110–500 кВ</option>
-              <option>Высоковольтные выключатели</option>
-              <option>Разъединители / заземлители</option>
-              <option>Измерительные трансформаторы</option>
-              <option>Высоковольтные вводы</option>
-              <option>Токопроводы / шинопроводы</option>
-              <option>Реклоузеры</option>
-              <option>НКУ / ВРУ / ГРЩ / ЩО</option>
-              <option>БСК / ФКУ</option>
-              <option>Шинные опоры</option>
-              <option>Шкафы автоматики / РЗА</option>
-              <option>ШОТ / СОПТ</option>
-              <option>Системы связи и телемеханики</option>
-              <option>Силовые трансформаторы</option>
-              <option>ОПН / Ограничители перенапряжений</option>
-              <option>Блочно-модульные здания</option>
-              <option>Системы безопасности и жизнеобеспечения</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="form-label">Комментарий</label>
-            <textarea name="message" class="form-textarea" placeholder="Опишите задачу, напряжение, мощность, сроки..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-large" style="width: 100%;">Получить КП</button>
-        </form>
+          <p style="margin-top: var(--space-6); font-size: var(--font-size-sm); color: var(--color-text-secondary);">Пн–Пт: 9:00 – 18:00. Пришлите техническое задание или опросный лист на почту — подготовим КП.</p>
+        </div>
       </div>
     </section>
   </main>

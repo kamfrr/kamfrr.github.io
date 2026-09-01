@@ -12,14 +12,48 @@ async function loadComponent(selector, path) {
   }
 }
 
+function carouselMove(btn, dir) {
+  const box = btn.closest('[data-carousel]');
+  if (!box) return;
+  const imgs = JSON.parse(box.dataset.carousel);
+  const img = box.querySelector('img');
+  const counter = box.querySelector('.carousel-counter');
+  const i = ((parseInt(box.dataset.i || '0', 10) + dir) % imgs.length + imgs.length) % imgs.length;
+  box.dataset.i = i;
+  img.src = imgs[i];
+  if (counter) counter.textContent = (i + 1) + ' / ' + imgs.length;
+}
+
 function toggleMenu() {
   const menu = document.getElementById('mobileMenu');
-  if (menu) menu.classList.toggle('active');
+  const btn = document.querySelector('.menu-toggle');
+  if (!menu) return;
+  const open = menu.classList.toggle('active');
+  if (btn) {
+    btn.classList.toggle('active', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  }
+  document.body.classList.toggle('menu-open', open);
 }
 
 function closeMenu() {
   const menu = document.getElementById('mobileMenu');
+  const btn = document.querySelector('.menu-toggle');
   if (menu) menu.classList.remove('active');
+  if (btn) {
+    btn.classList.remove('active');
+    btn.setAttribute('aria-expanded', 'false');
+  }
+  document.body.classList.remove('menu-open');
+}
+
+function toggleCatalog() {
+  const extra = document.getElementById('catalogExtra');
+  const btn = document.getElementById('catalogToggle');
+  if (!extra || !btn) return;
+  const open = extra.classList.toggle('expanded');
+  btn.textContent = open ? 'Свернуть каталог' : 'Показать весь каталог';
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
 }
 
 function initHeaderScroll() {
@@ -61,6 +95,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Close mobile menu on outside click
   document.addEventListener('click', (e) => {
     const header = document.querySelector('.site-header');
-    if (header && !header.contains(e.target)) closeMenu();
+    const menu = document.getElementById('mobileMenu');
+    const inside = (header && header.contains(e.target)) || (menu && menu.contains(e.target));
+    if (!inside) closeMenu();
   });
 });

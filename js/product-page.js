@@ -51,9 +51,9 @@ function initProductPage(categorySlug, productSlug) {
   const relatedGrid = document.getElementById('related-products');
   if (relatedGrid && related.length) {
     relatedGrid.innerHTML = related.map(p => {
-      const imgHtml = p.image ? 
+      const imgHtml = p.image ?
         `<img src="${p.image}" alt="${p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` :
-        `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:var(--color-text-muted);font-size:var(--font-size-sm);">${p.name}</div>`;
+        `<div class="img-placeholder"><span class="img-placeholder-name">${p.name}</span><span class="img-placeholder-note">Фото скоро появится</span></div>`;
       return `
       <a href="/catalog/${categorySlug}/${p.slug}/" class="product-card">
         <div class="product-card-img">${imgHtml}</div>

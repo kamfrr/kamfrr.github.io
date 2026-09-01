@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/layout.css">
   <script src="/js/components.js" defer></script>
-  <script src="/js/form-handler.js" defer></script>
 </head>
 <body>
   <div id="site-header"></div>
@@ -36,17 +35,13 @@
             <h3 style="margin-bottom: var(--space-4);">Режим работы</h3>
             <p>Пн–Пт: 9:00 – 18:00</p>
           </div>
-          <div style="padding: var(--space-8); background: var(--color-bg-alt); border-radius: var(--radius-xl);">
-            <h2 style="margin-bottom: var(--space-4);">Форма обратной связи</h2>
-            <form data-form action="/api/send-form.php" method="POST">
-              <input type="text" name="website" style="position:absolute;left:-9999px;" tabindex="-1" autocomplete="off">
-              <input type="hidden" name="page" value="Страница контактов">
-              <div class="form-group"><input type="text" name="name" class="form-input" placeholder="Ваше имя" required></div>
-              <div class="form-group"><input type="tel" name="phone" class="form-input" placeholder="Телефон" required></div>
-              <div class="form-group"><input type="email" name="email" class="form-input" placeholder="Email"></div>
-              <div class="form-group"><textarea name="message" class="form-textarea" placeholder="Сообщение"></textarea></div>
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить</button>
-            </form>
+          <div style="padding: var(--space-8); background: var(--color-bg-alt); border-radius: var(--radius-xl); min-width: 0;">
+            <h2 style="margin-bottom: var(--space-4);">Свяжитесь с нами</h2>
+            <p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin-bottom: var(--space-6);">Позвоните или напишите нам — инженер ответит в течение 2 часов в рабочее время и подготовит коммерческое предложение с учётом ваших требований.</p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2);">Телефон</p>
+            <p style="margin-bottom: var(--space-5);"><a href="tel:+7XXXXXXXXXX" style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text); text-decoration: none;">+7 (XXX) XXX-XX-XX</a></p>
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-secondary); margin-bottom: var(--space-2);">Email</p>
+            <p style="margin-bottom: 0;"><a href="mailto:info@example.com" style="font-size: var(--font-size-xl); font-weight: var(--font-weight-semibold); color: var(--color-text); text-decoration: none;">info@example.com</a></p>
           </div>
         </div>
       </div>

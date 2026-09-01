@@ -63,6 +63,14 @@
   font-size: var(--font-size-lg);
 }
 
+@media (max-width: 1023px) {
+  .btn-large {
+    white-space: normal;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
 /* Cards */
 .card {
   background: white;
@@ -95,6 +103,43 @@
 
 .card:hover::before {
   transform: scaleX(1);
+}
+
+/* Card with photo background (industry cards) */
+.card-photo {
+  background-size: cover;
+  background-position: center;
+  border: none;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-photo::before {
+  inset: 0;
+  height: auto;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.25) 0%, rgba(15, 23, 42, 0.9) 100%);
+  transform: none;
+  transition: background var(--transition-base);
+}
+
+.card-photo:hover::before {
+  transform: none;
+  background: linear-gradient(180deg, rgba(30, 27, 75, 0.35) 0%, rgba(15, 23, 42, 0.92) 100%);
+}
+
+.card-photo > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-photo .card-title {
+  color: #fff;
+}
+
+.card-photo .card-text {
+  color: rgba(255, 255, 255, 0.85);
 }
 
 .card-icon {
@@ -147,6 +192,76 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  text-align: center;
+  background: linear-gradient(135deg, #eef1f6, #dde3ee);
+}
+
+.img-placeholder-name {
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.img-placeholder-note {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--color-text);
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: background var(--transition-base);
+  z-index: 2;
+}
+
+.carousel-btn:hover {
+  background: white;
+}
+
+.carousel-prev {
+  left: var(--space-3);
+}
+
+.carousel-next {
+  right: var(--space-3);
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: var(--space-3);
+  right: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: rgba(15, 23, 42, 0.6);
+  color: white;
+  font-size: var(--font-size-xs);
+  z-index: 2;
 }
 
 .product-card-img img {

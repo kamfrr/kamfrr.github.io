@@ -55,6 +55,12 @@ def product_to_js(product):
     for app in product.get("applications", []):
         lines.append(f'        {js_str(app)},')
     lines.append("      ]")
+    if product.get("details"):
+        lines[-1] += ","
+        lines.append("      details: [")
+        for d in product["details"]:
+            lines.append(f'        {js_str(d)},')
+        lines.append("      ]")
     lines.append("    }")
     return "\n".join(lines)
 
@@ -100,6 +106,8 @@ def generate_products_js(categories, products, include_helpers=True):
 
 def generate_category_page(category, products_list, extra_scripts=""):
     slug = category["slug"]
+    cat_image = category.get("image", "")
+    hero_style = f' style="background-image: url(\'{cat_image}\');"' if cat_image and "placeholder" not in cat_image else ""
     product_links = "\n".join([
         f'          <li><a href="/catalog/{slug}/{p["slug"]}/">{p["name"]}</a></li>'
         for p in products_list
@@ -142,11 +150,15 @@ def generate_category_page(category, products_list, extra_scripts=""):
   <div id="site-header"></div>
   <main>
     <div class="breadcrumbs"><div class="container"><a href="/">Главная</a> <span>/</span> <a href="/catalog/">Продукция</a> <span>/</span> <span>{category["name"]}</span></div></div>
-    <section class="section">
+    <section class="page-hero"{hero_style}>
       <div class="container">
         <h1>{category["title"]} — купить с доставкой</h1>
-        <p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin: var(--space-6) 0;">{category["description"]}</p>
-        <div id="products-grid" class="grid grid-sm-2 grid-md-3" style="margin: var(--space-10) 0;"></div>
+        <p class="page-hero-sub">{category["description"]}</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div id="products-grid" class="grid grid-sm-2 grid-md-3" style="margin-bottom: var(--space-10);"></div>
         <div style="margin-top: var(--space-16);">
           <h2>Виды оборудования</h2>
           <ul style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); padding-left: var(--space-6);">
@@ -166,11 +178,30 @@ def generate_category_page(category, products_list, extra_scripts=""):
 def generate_product_page(category, product, extra_scripts=""):
     cat_slug = category["slug"]
     p = product
-    image = p.get("image", "")
-    image_html = f'<div class="product-hero-image"><img src="{image}" alt="{p["name"]}"></div>' if image else ""
+    images = p.get("images") or ([p["image"]] if p.get("image") else [])
+    if len(images) > 1:
+        imgs_json = json.dumps(images, ensure_ascii=False)
+        image_html = (
+            f'<div class="product-hero-image carousel" data-carousel=\'{imgs_json}\' data-i="0">'
+            f'<img src="{images[0]}" alt="{p["name"]}">'
+            f'<button type="button" class="carousel-btn carousel-prev" onclick="carouselMove(this, -1)" aria-label="Предыдущее фото">&#8249;</button>'
+            f'<button type="button" class="carousel-btn carousel-next" onclick="carouselMove(this, 1)" aria-label="Следующее фото">&#8250;</button>'
+            f'<div class="carousel-counter">1 / {len(images)}</div>'
+            f'</div>'
+        )
+    elif images:
+        image_html = f'<div class="product-hero-image"><img src="{images[0]}" alt="{p["name"]}"></div>'
+    else:
+        image_html = f'<div class="product-hero-image"><div class="img-placeholder"><span class="img-placeholder-name">{p["name"]}</span><span class="img-placeholder-note">Фото скоро появится</span></div></div>'
     specs_rows = "\n".join([f'              <tr><td>{s["param"]}</td><td>{s["value"]}</td></tr>' for s in p.get("specs", [])])
     adv_items = "\n".join([f'            <li>{a}</li>' for a in p.get("advantages", [])])
     app_items = "\n".join([f'            <li>{a}</li>' for a in p.get("applications", [])])
+    details_html = ""
+    if p.get("details"):
+        detail_paras = "\n".join([f'        <p style="color: var(--color-text-secondary); line-height: var(--line-height-relaxed); margin: var(--space-4) 0;">{d}</p>' for d in p["details"]])
+        details_html = f'''        <h2 style="margin-top: var(--space-10);">Описание</h2>
+{detail_paras}
+'''
     return f'''<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -208,7 +239,7 @@ def generate_product_page(category, product, extra_scripts=""):
             <a href="/pages/contacts.html" class="btn btn-primary btn-large">Получить коммерческое предложение</a>
           </div>
         </div>
-        <h2>Технические характеристики</h2>
+{details_html}        <h2>Технические характеристики</h2>
         <div class="table-wrap">
           <table class="table">
             <tr><th>Параметр</th><th>Значение</th></tr>

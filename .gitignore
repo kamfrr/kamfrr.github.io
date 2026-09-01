@@ -1,8 +1,13 @@
 # System files
 .netlify/
 .playwright-mcp/
+.qa/
 node_modules/
 *.log
+*.bak
+
+# Build/deploy staging
+.deploy/
 
 # Source docs
 *.docx
@@ -10,3 +15,6 @@ node_modules/
 
 # Private info folder
 инфа/
+
+# Source photos for catalog (copies live in images/catalog/)
+фото для каталога/
