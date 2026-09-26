@@ -17,7 +17,7 @@ function initCategoryPage(categorySlug, categoryName, categoryTitle, categoryDes
       <a href="/catalog/${categorySlug}/${p.slug}/" class="product-card">
         <div class="product-card-img">${imgHtml}</div>
         <div class="product-card-body">
-          <div class="tag mb-4">${p.brand}</div>
+          ${p.brand ? `<div class="tag mb-4">${p.brand}</div>` : ''}
           <h3 class="product-card-title">${p.name}</h3>
           <p class="product-card-text">${p.description.substring(0, 120)}...</p>
         </div>

@@ -542,12 +542,14 @@ body.menu-open {
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-1);
+  padding: 0 var(--space-6);
 }
 
 .category-card .card-text {
   color: var(--color-text-secondary);
   font-size: var(--font-size-sm);
   line-height: var(--line-height-relaxed);
+  padding: 0 var(--space-6) var(--space-6);
 }
 
 /* Stats grid */

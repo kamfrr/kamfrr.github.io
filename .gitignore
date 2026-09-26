@@ -18,3 +18,8 @@ node_modules/
 
 # Source photos for catalog (copies live in images/catalog/)
 фото для каталога/
+новые фото/
+шкафы/
+
+# Python cache
+__pycache__/
