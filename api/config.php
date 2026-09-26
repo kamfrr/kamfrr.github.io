@@ -6,7 +6,7 @@
 
 // Кому отправлять заявки
 return [
-    'recipient_email' => 'info@example.com',  // Замените на реальный email
+    'recipient_email' => 'info@swind.su',
     'recipient_name'  => 'ООО Южный Ветер',
     'subject_prefix'  => '[Заявка с сайта]',
 
