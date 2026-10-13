@@ -24,3 +24,7 @@ node_modules/
 
 # Python cache
 __pycache__/
+
+# Local tooling
+.claude/
+__pycache__/

@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /seo/privacy.html
+Disallow: /scripts/
+
+Sitemap: https://swind.su/sitemap.xml

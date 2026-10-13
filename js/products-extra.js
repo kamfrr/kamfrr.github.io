@@ -5,7 +5,7 @@ Object.assign(PRODUCTS, {
       name: "Токопроводы комплектные генераторного напряжения ТЭНЕ / ТЭНП",
       category: "tokoprovody-shinoprovody",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/7/7_1.jpg",
+      image: "/images/catalog/7/7_1.webp",
       description: "Токопроводы комплектные пофазно-экранированные генераторного напряжения 10, 20, 24 и 35 кВ с компенсированным внешним электромагнитным полем. Номинальные токи от 1600 до 33000 А.",
       specs: [
         { param: "Напряжение, кВ", value: "10; 20; 24; 35" },
@@ -35,7 +35,7 @@ Object.assign(PRODUCTS, {
       name: "Токопроводы комплектные закрытые ТЗК, ТЗКР, ТЗКЭП",
       category: "tokoprovody-shinoprovody",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/7/7_2.jpg",
+      image: "/images/catalog/7/7_2.webp",
       description: "Токопроводы комплектные закрытые напряжением 6, 10 и 20 кВ на номинальные токи до 6300 А для соединения трансформаторов со шкафами КРУ и турбогенераторов с повышающими трансформаторами.",
       specs: [
         { param: "Напряжение, кВ", value: "6; 10; 20" },
@@ -64,7 +64,7 @@ Object.assign(PRODUCTS, {
       name: "Шинопроводы комплектные закрытые серии ШЗК",
       category: "tokoprovody-shinoprovody",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/7/7_3.png",
+      image: "/images/catalog/7/7_3.webp",
       description: "Шинопроводы комплектные закрытые серии ШЗК с воздушной изоляцией напряжением 0,4–1,2 кВ на номинальные токи 1600–6300 А. Цельносварная конструкция, степень защиты IP54(IP55).",
       specs: [
         { param: "Напряжение, кВ", value: "0,4 – 1,2" },
@@ -96,7 +96,7 @@ Object.assign(PRODUCTS, {
       name: "Продукция ООО НТЦ «Механотроника»",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/shkafy.jpg",
+      image: "/images/suppliers/mtrele/shkafy.webp",
       description: "Микропроцессорные устройства релейной защиты БМРЗ, типовые шкафы РЗА ШЭ-МТ, дуговая защита ДУГА-МТ, устройства БАВР/АВР, системы оперативного тока СОПТ-МТ и ШОТ-МТ, щиты переменного тока, панели АИИСКУЭ, панели управления технологическим оборудованием и программное обеспечение.",
       specs: [
         { param: "Напряжение, кВ", value: "0,4 – 220" },
@@ -131,7 +131,7 @@ Object.assign(PRODUCTS, {
       name: "Микропроцессорные устройства БМРЗ",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/rza.jpg",
+      image: "/images/suppliers/mtrele/rza.webp",
       description: "Микропроцессорные устройства релейной защиты и автоматики БМРЗ-50/100/120/150, БМРЗ 110–220 кВ и БМРЗ Ж/Д для присоединений 0,4–220 кВ.",
       specs: [
         { param: "Напряжение, кВ", value: "0,4 – 220" },
@@ -160,7 +160,7 @@ Object.assign(PRODUCTS, {
       name: "Комплекс дуговой защиты ДУГА-МТ",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/duga.jpg",
+      image: "/images/suppliers/mtrele/duga.webp",
       description: "Комплекс дуговой защиты ДУГА-МТ для КРУ 6–35 кВ с оптическими датчиками дуги и временем срабатывания менее 4 мс.",
       specs: [
         { param: "Время срабатывания", value: "менее 4 мс" },
@@ -186,7 +186,7 @@ Object.assign(PRODUCTS, {
       name: "Системы оперативного тока СОПТ-МТ",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/sopt.jpg",
+      image: "/images/suppliers/mtrele/sopt.webp",
       description: "Системы постоянного оперативного тока СОПТ-МТ 220/110/48/24 В на базе шкафов ШОТ-МТ, ШАБ-МТ и ШРОТ-МТ, включая компактное исполнение СОПТ-КОМПАКТ.",
       specs: [
         { param: "Выходное напряжение, В", value: "220 / 110 / 48 / 24" },
@@ -212,7 +212,7 @@ Object.assign(PRODUCTS, {
       name: "Типовые шкафы РЗА ШЭ-МТ",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/shkafy.jpg",
+      image: "/images/suppliers/mtrele/shkafy.webp",
       description: "Типовые шкафы релейной защиты и автоматики ШЭ-МТ для подстанций 6–220 кВ полной заводской готовности.",
       specs: [
         { param: "Напряжение, кВ", value: "6 – 220" },
@@ -238,7 +238,7 @@ Object.assign(PRODUCTS, {
       name: "Блоки БАВР/АВР и панели АИИСКУЭ",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/avtomatika.jpg",
+      image: "/images/suppliers/mtrele/avtomatika.webp",
       description: "Устройства БАВР/АВР, панели АИИСКУЭ и панели управления технологическим оборудованием подстанций.",
       specs: [
         { param: "Применение", value: "Подстанции 6–220 кВ" },
@@ -264,7 +264,7 @@ Object.assign(PRODUCTS, {
       name: "Блоки питания и накопители БПК",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/bpk5.jpg",
+      image: "/images/suppliers/mtrele/bpk5.webp",
       description: "Блоки питания и контроля БПК-5-Т, накопители и щиты переменного тока для оперативных цепей и цепей управления подстанций.",
       specs: [
         { param: "Серия", value: "БПК-5-Т" },
@@ -290,7 +290,7 @@ Object.assign(PRODUCTS, {
       name: "Программное обеспечение",
       category: "shkafy-avtomatiki-rza",
       brand: "НТЦ Механотроника",
-      image: "/images/suppliers/mtrele/soft.jpg",
+      image: "/images/suppliers/mtrele/soft.webp",
       description: "Программные продукты WebScadaMT, Конфигуратор-МТ, Администратор-МТ и FastView для конфигурирования, мониторинга и диспетчеризации.",
       specs: [
         { param: "Продукты", value: "WebScadaMT, Конфигуратор-МТ, Администратор-МТ, FastView" },
@@ -317,7 +317,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы ВЧ-связи",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_1.jpg",
+      image: "/images/catalog/9/9_1.webp",
       description: "Шкафы высокочастотной связи собственного производства для организации каналов релейной защиты и телемеханики по линиям электропередач.",
       specs: [
         { param: "Применение", value: "ЛЭП 110–500 кВ" },
@@ -340,7 +340,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы ЦСПИ",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_2.jpg",
+      image: "/images/catalog/9/9_2.webp",
       description: "Шкафы цифровых систем передачи информации (ЦСПИ) собственного производства для подстанций и энергообъектов.",
       specs: [
         { param: "Интерфейсы", value: "E1, Ethernet" },
@@ -363,7 +363,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы внутриобъектовой связи",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_3.jpg",
+      image: "/images/catalog/9/9_3.webp",
       description: "Шкафы внутриобъектовой связи собственного производства для организации оперативной и технологической связи на подстанциях и энергообъектах.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -386,7 +386,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы РРЛ",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_4.jpg",
+      image: "/images/catalog/9/9_4.webp",
       description: "Шкафы радиорелейных линий (РРЛ) собственного производства для организации дальних трактов связи энергообъектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -409,7 +409,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы ВОЛС",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_5.jpg",
+      image: "/images/catalog/9/9_5.webp",
       description: "Шкафы волоконно-оптических линий связи (ВОЛС) собственного производства для высокоскоростной передачи данных на энергообъектах.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -432,7 +432,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы информационной безопасности",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_6.jpg",
+      image: "/images/catalog/9/9_6.webp",
       description: "Шкафы информационной безопасности собственного производства: шифрование, межсетевые экраны и защита от несанкционированного доступа для энергетических объектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -455,7 +455,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы видеонаблюдения",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_7.jpg",
+      image: "/images/catalog/9/9_7.webp",
       description: "Шкафы систем видеонаблюдения собственного производства для круглосуточного контроля подстанций и энергообъектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -478,7 +478,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы СКУД",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_8.jpg",
+      image: "/images/catalog/9/9_8.webp",
       description: "Шкафы систем контроля и управления доступом (СКУД) собственного производства для обеспечения безопасности подстанций и энергообъектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -501,7 +501,7 @@ Object.assign(PRODUCTS, {
       name: "Шкафы бесперебойного гарантированного электропитания и автономного электроснабжения",
       category: "sistemy-svyazi",
       brand: "Собственное производство",
-      image: "/images/catalog/9/9_9.jpg",
+      image: "/images/catalog/9/9_9.webp",
       description: "Шкафы бесперебойного гарантированного электропитания и автономного электроснабжения собственного производства для критически важных объектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -526,7 +526,7 @@ Object.assign(PRODUCTS, {
       name: "Блочно-модульные ЗРУ",
       category: "blokirovannye-zdaniya-bmz",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/10/10_1.jpeg",
+      image: "/images/catalog/10/10_1.webp",
       description: "Блочно-модульные закрытые распределительные устройства (ЗРУ) 6–35 кВ заводской готовности на базе ячеек КРУ и КСО.",
       specs: [
         { param: "Напряжение, кВ", value: "6; 10; 20; 35" },
@@ -552,7 +552,7 @@ Object.assign(PRODUCTS, {
       name: "Блочно-модульные КТП 6(10)/0,4 кВ, РТП 6(10)/0,4 кВ, НКУ",
       category: "blokirovannye-zdaniya-bmz",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/10/10_2.jpg",
+      image: "/images/catalog/10/10_2.webp",
       description: "Блочно-модульные комплектные и распределительные трансформаторные подстанции 6(10)/0,4 кВ и низковольтные комплектные устройства полной заводской готовности.",
       specs: [
         { param: "Напряжение, кВ", value: "6(10)/0,4" },
@@ -578,7 +578,7 @@ Object.assign(PRODUCTS, {
       name: "Блочно-модульные общеподстанционные пункты управления",
       category: "blokirovannye-zdaniya-bmz",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/10/10_3.jpg",
+      image: "/images/catalog/10/10_3.webp",
       description: "Блочно-модульные общеподстанционные пункты управления (ОПУ) для размещения панелей РЗА, связи, АИИСКУЭ, щитов постоянного и переменного тока.",
       specs: [
         { param: "Назначение", value: "ОПУ" },

@@ -4,7 +4,7 @@ const PRODUCTS = {
       slug: "ktpb-35-110-220",
       name: "КТПБ 35/110/220 кВ",
       category: "ktp-bktp-rtp",
-      image: "/images/catalog/1/1_1.jpg",
+      image: "/images/catalog/1/1_1.webp",
       description: "Комплектные трансформаторные подстанции блочного типа (КТПБ) предназначены для приёма, трансформации и последующего распределения электроэнергии в трёхфазных сетях переменного тока промышленной частоты 50 Гц на класс напряжения 35, 110 и 220 кВ.",
       specs: [
         { param: "Напряжение, кВ", value: "35; 110; 220" },
@@ -34,7 +34,7 @@ const PRODUCTS = {
       name: "Элегазовые выключатели LTB / DTB 110–220 кВ",
       category: "oborudovanie-tp-do-500-kv",
       brand: "Energy-H",
-      image: "/images/catalog/2/2_1.jpg",
+      image: "/images/catalog/2/2_1.webp",
       description: "Колонковые элегазовые выключатели серии LTB и баковые элегазовые выключатели серии DTB для сетей 110–220 кВ.",
       specs: [
         { param: "Напряжение, кВ", value: "110 – 220" },
@@ -60,7 +60,7 @@ const PRODUCTS = {
       name: "Высоковольтные разъединители SDF 110–500 кВ",
       category: "oborudovanie-tp-do-500-kv",
       brand: "Energy-H",
-      image: "/images/catalog/2/2_2.jpg",
+      image: "/images/catalog/2/2_2.webp",
       description: "Горизонтально-поворотные разъединители серии SDF и отдельно стоящие заземлители для сетей 110–500 кВ. Разработаны и испытаны в соответствии с требованиями ГОСТ Р 52726-2007.",
       specs: [
         { param: "Напряжение, кВ", value: "110 – 500" },
@@ -87,7 +87,7 @@ const PRODUCTS = {
       name: "Элегазовые измерительные трансформаторы тока и напряжения 110–220 кВ",
       category: "oborudovanie-tp-do-500-kv",
       brand: "Energy-H",
-      image: "/images/catalog/2/2_3.jpg",
+      image: "/images/catalog/2/2_3.webp",
       description: "Элегазовые измерительные трансформаторы тока и напряжения для передачи сигнала измерительной информации измерительным приборам, счётчикам, устройствам защиты и управления в сетях 110–220 кВ с заземлённой нейтралью.",
       specs: [
         { param: "Напряжение, кВ", value: "110 – 220" },
@@ -115,7 +115,7 @@ const PRODUCTS = {
       name: "КРУЭ-LZ 110 кВ",
       category: "krue-110-500",
       brand: "ЛЗВО",
-      image: "/images/catalog/3/3_1.jpg",
+      image: "/images/catalog/3/3_1.webp",
       description: "Комплектное распределительное устройство с элегазовой изоляцией на номинальное напряжение 110 кВ.",
       specs: [
         { param: "Номинальное напряжение, кВ", value: "110" },
@@ -140,7 +140,7 @@ const PRODUCTS = {
       name: "КРУЭ-LZ 220 кВ",
       category: "krue-110-500",
       brand: "ЛЗВО",
-      image: "/images/catalog/3/3_2.jpg",
+      image: "/images/catalog/3/3_2.webp",
       description: "КРУЭ на номинальное напряжение 220 кВ. Трёхфазное и однофазное исполнение.",
       specs: [
         { param: "Номинальное напряжение, кВ", value: "220" },
@@ -164,7 +164,7 @@ const PRODUCTS = {
       name: "КРУЭ-LZ 330 кВ",
       category: "krue-110-500",
       brand: "ЛЗВО",
-      image: "/images/catalog/3/3_3.jpg",
+      image: "/images/catalog/3/3_3.webp",
       description: "КРУЭ на номинальное напряжение 330 кВ. Однофазное исполнение для внутренней установки.",
       specs: [
         { param: "Номинальное напряжение, кВ", value: "330" },
@@ -187,7 +187,7 @@ const PRODUCTS = {
       name: "КРУЭ-LZ 500 кВ",
       category: "krue-110-500",
       brand: "ЛЗВО",
-      image: "/images/catalog/3/3_4.jpg",
+      image: "/images/catalog/3/3_4.webp",
       description: "КРУЭ на номинальное напряжение 500 кВ. Однофазное исполнение для внутренней установки.",
       specs: [
         { param: "Номинальное напряжение, кВ", value: "500" },
@@ -211,7 +211,7 @@ const PRODUCTS = {
       name: "КРУЭ-Моноблок К-131-Э",
       category: "krue-110-500",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/3/3_5.jpg",
+      image: "/images/catalog/3/3_5.webp",
       description: "Комплектное элегазовое устройство для радиальных, магистральных и петлевых распределительных сетей 6, 10 и 20 кВ. Присоединение, питание и защита одного или двух распределительных трансформаторов. Номинальный ток 630 А.",
       specs: [
         { param: "Напряжение, кВ", value: "6; 10; 20" },
@@ -239,7 +239,7 @@ const PRODUCTS = {
       name: "КРУЭ-Моноблок К-134 «ПРИЗМА»",
       category: "krue-110-500",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/3/3_6.png",
+      image: "/images/catalog/3/3_6.webp",
       description: "КРУЭ с элегазовой изоляцией для радиальных, магистральных и петлевых сетей 6, 10 и 20 кВ с комбинацией выключателя нагрузки и вакуумного выключателя. Срок службы 30 лет, номинальный ток 630 А.",
       specs: [
         { param: "Напряжение, кВ", value: "6; 10; 20" },
@@ -268,8 +268,7 @@ const PRODUCTS = {
       slug: "silovye-maslyanye-do-220-kv",
       name: "Силовые масляные трансформаторы до 220 кВ",
       category: "silovye-transformatory",
-      brand: "Мосэлектрощит",
-      image: "/images/catalog/4/4_1.jpg",
+      image: "/images/catalog/4/4_1.webp",
       description: "Силовые масляные трансформаторы на класс напряжения до 220 кВ для комплектных подстанций и распределительных устройств.",
       specs: [
         { param: "Напряжение, кВ", value: "до 220" },
@@ -293,8 +292,7 @@ const PRODUCTS = {
       slug: "tmg-do-35-kv",
       name: "Масляные трансформаторы ТМГ до 35 кВ",
       category: "silovye-transformatory",
-      brand: "Мосэлектрощит",
-      image: "/images/catalog/4/4_2.jpeg",
+      image: "/images/catalog/4/4_2.webp",
       description: "Силовые масляные трансформаторы ТМГ герметичного исполнения мощностью 25–4000 кВА на класс напряжения до 35 кВ для сетей 6/10/35/0,4 кВ.",
       specs: [
         { param: "Мощность, кВА", value: "25 – 4000" },
@@ -320,8 +318,7 @@ const PRODUCTS = {
       slug: "sukhie-transformatory-do-35-kv",
       name: "Сухие трансформаторы до 35 кВ",
       category: "silovye-transformatory",
-      brand: "Мосэлектрощит",
-      image: "/images/catalog/4/4_3.jpg",
+      image: "/images/catalog/4/4_3.webp",
       description: "Сухие силовые трансформаторы с литой изоляцией мощностью до 2500 кВА на класс напряжения до 35 кВ для установки внутри помещений.",
       specs: [
         { param: "Мощность, кВА", value: "25 – 2500" },
@@ -350,7 +347,7 @@ const PRODUCTS = {
       name: "Ячейки КРУ (КСО) 6/10 кВ",
       category: "kru-kso-6-35",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/5/5_1/5_1_classik.png",
+      image: "/images/catalog/5/5_1/5_1_classik.webp",
       description: "Ячейки КРУ и камеры КСО 6/10 кВ для приёма и распределения электроэнергии трёхфазного переменного тока 50 Гц: КСО-298, КРУ серий К-125 «Трансформер», К-128 «Классик», К-129 «Оптима», К-133 «Компакт».",
       specs: [
         { param: "Напряжение, кВ", value: "6; 10" },
@@ -381,7 +378,7 @@ const PRODUCTS = {
       name: "Ячейки КРУ 20 кВ",
       category: "kru-kso-6-35",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/5/5_2.png",
+      image: "/images/catalog/5/5_2.webp",
       description: "КРУ серии К-131 «Прогресс» для приёма и распределения электрической энергии в сетях трёхфазного переменного тока частотой 50 и 60 Гц напряжением до 24 кВ (20 кВ).",
       specs: [
         { param: "Напряжение, кВ", value: "до 24 (20)" },
@@ -411,7 +408,7 @@ const PRODUCTS = {
       name: "Ячейки КРУ 35 кВ",
       category: "kru-kso-6-35",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/5/5_3.png",
+      image: "/images/catalog/5/5_3.webp",
       description: "КРУ серии К-130 «Гарант» 35 кВ для приёма и распределения электроэнергии в сетях переменного тока 50/60 Гц с изолированной или частично заземлённой нейтралью. Токи до 2500 А.",
       specs: [
         { param: "Напряжение, кВ", value: "35" },
@@ -444,7 +441,7 @@ const PRODUCTS = {
       name: "Шкафы НКУ 0,4 кВ",
       category: "nku-vru-grshch",
       brand: "Мосэлектрощит",
-      image: "/images/catalog/6/6_1.png",
+      image: "/images/catalog/6/6_1.webp",
       description: "Шкафы низковольтных комплектных устройств (НКУ) напряжением 0,4 кВ для приёма и распределения электроэнергии, в том числе серии QUBE.",
       specs: [
         { param: "Напряжение, В", value: "380/220" },

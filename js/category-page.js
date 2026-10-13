@@ -1,17 +1,12 @@
 // Category page renderer
 function initCategoryPage(categorySlug, categoryName, categoryTitle, categoryDescription, seoText) {
-  document.title = `${categoryTitle} купить с доставкой | Южный Ветер`;
-  
-  const metaDesc = document.querySelector('meta[name="description"]');
-  if (metaDesc) metaDesc.content = `${categoryTitle} — цена, характеристики, сроки поставки. Соответствие ГОСТ. Доставка по РФ. Закажите расчет!`;
-
   const products = getProductsByCategory(categorySlug);
   const grid = document.getElementById('products-grid');
   
   if (grid && products.length) {
     grid.innerHTML = products.map(p => {
       const imgHtml = p.image ?
-        `<img src="${p.image}" alt="${p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">` :
+        `<img src="${p.image}" alt="${p.name}" loading="lazy">` :
         `<div class="img-placeholder"><span class="img-placeholder-name">${p.name}</span><span class="img-placeholder-note">Фото скоро появится</span></div>`;
       return `
       <a href="/catalog/${categorySlug}/${p.slug}/" class="product-card">
