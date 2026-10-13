@@ -1,7 +1,8 @@
 // Load shared components
 async function loadComponent(selector, path) {
   const el = document.querySelector(selector);
-  if (!el) return;
+  // Header and footer are inlined at build time (scripts/inline_components.py); fetch only as a fallback
+  if (!el || el.childElementCount) return;
   try {
     const res = await fetch(path);
     if (res.ok) {
@@ -64,6 +65,20 @@ function initHeaderScroll() {
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 
+function initLazyBackgrounds() {
+  const els = document.querySelectorAll('[data-bg]');
+  if (!els.length) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.backgroundImage = `url('${entry.target.dataset.bg}')`;
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '600px 0px' });
+  els.forEach(el => observer.observe(el));
+}
+
 function initRevealAnimations() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -79,13 +94,15 @@ function initRevealAnimations() {
 
 // Initialize
 document.addEventListener('DOMContentLoaded', async () => {
+  initRevealAnimations();
+  initLazyBackgrounds();
+
   await Promise.all([
     loadComponent('#site-header', '/components/header.html'),
     loadComponent('#site-footer', '/components/footer.html')
   ]);
 
   initHeaderScroll();
-  initRevealAnimations();
 
   // Close mobile menu on resize
   window.addEventListener('resize', () => {

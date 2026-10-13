@@ -15,14 +15,12 @@
   <meta property="og:description" content="Продукция ООО НТЦ «Механотроника»: микропроцессорные устройства БМРЗ, шкафы РЗА ШЭ-МТ, дуговая защита ДУГА-МТ, системы оперативного тока СОПТ-МТ/ШОТ-МТ, панели АИИСКУЭ и программное обеспечение Прямые поставки от производителей. Доставка по РФ.">
   <meta property="og:url" content="https://swind.su/catalog/shkafy-avtomatiki-rza/">
   <meta property="og:image" content="https://swind.su/images/og-cover.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-cyrillic.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>
   <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/base.css?v=2">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/layout.css">
-  <script src="/js/categories.js" defer></script>
   <script src="/js/products-data.js" defer></script>
   <script src="/js/products-extra.js" defer></script>
   <script src="/js/components.js" defer></script>
@@ -55,7 +53,46 @@
   </script>
 </head>
 <body>
-  <div id="site-header"></div>
+  <div id="site-header"><!--inc:header-->
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="logo">
+      <span style="display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; background:#fff; border-radius:50%; flex-shrink:0; box-shadow: 0 1px 4px rgba(15, 23, 42, 0.15);">
+        <img src="/images/logo.webp" alt="Южный Ветер" style="height:34px;width:auto;display:block;">
+      </span>
+      <span>Южный Ветер</span>
+    </a>
+
+    <nav class="nav-desktop">
+      <ul>
+        <li><a href="/catalog/">Продукция</a></li>
+        <li><a href="/pages/about.html">О компании</a></li>
+        <li><a href="/pages/otraslevye-resheniya.html">Отраслевые решения</a></li>
+
+        <li><a href="/pages/contacts.html">Контакты</a></li>
+      </ul>
+      <a href="/pages/contacts.html" class="btn btn-primary">Получить КП</a>
+    </nav>
+
+    <button class="menu-toggle" aria-label="Открыть меню" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="nav-mobile" id="mobileMenu">
+  <ul>
+    <li><a href="/catalog/">Продукция</a></li>
+    <li><a href="/pages/about.html">О компании</a></li>
+    <li><a href="/pages/otraslevye-resheniya.html">Отраслевые решения</a></li>
+
+    <li><a href="/pages/contacts.html">Контакты</a></li>
+    <li><a href="/pages/contacts.html" class="btn btn-primary">Получить КП</a></li>
+  </ul>
+</nav>
+<!--/inc:header--></div>
   <main>
     <div class="breadcrumbs"><div class="container"><a href="/">Главная</a> <span>/</span> <a href="/catalog/">Продукция</a> <span>/</span> <span>РЗА и автоматика</span></div></div>
     <section class="page-hero" style="background-image: url('/images/suppliers/mtrele/shkafy.webp');">
@@ -84,7 +121,63 @@
       </div>
     </section>
   </main>
-  <div id="site-footer"></div>
+  <div id="site-footer"><!--inc:footer-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo mb-6" style="color: white;">
+          <span style="display:inline-flex; align-items:center; justify-content:center; width:56px; height:56px; background:#fff; border-radius:50%; flex-shrink:0;">
+            <img src="/images/logo.webp" alt="Южный Ветер" style="height:34px;width:auto;display:block;">
+          </span>
+          <span>Южный Ветер</span>
+        </div>
+        <p style="font-size: var(--font-size-sm); line-height: var(--line-height-relaxed); max-width: 300px;">
+          Поставка электротехнического оборудования до 110/220/500 кВ от ведущих производителей. 
+          КТП, КРУ, КРУЭ, высоковольтные выключатели, РЗА и АСУ ТП.
+        </p>
+      </div>
+      <div>
+        <div class="footer-title">Продукция</div>
+        <ul class="footer-links footer-links-2col">
+          <li><a href="/catalog/ktp-bktp-rtp/">КТПБ 35/110/220 кВ</a></li>
+          <li><a href="/catalog/oborudovanie-tp-do-500-kv/">Оборудование для ТП до 500 кВ</a></li>
+          <li><a href="/catalog/krue-110-500/">КРУЭ до 500 кВ</a></li>
+          <li><a href="/catalog/silovye-transformatory/">Трансформаторы до 220 кВ</a></li>
+          <li><a href="/catalog/kru-kso-6-35/">КРУ до 35 кВ</a></li>
+          <li><a href="/catalog/nku-vru-grshch/">РУ 0,4 кВ (НКУ)</a></li>
+          <li><a href="/catalog/tokoprovody-shinoprovody/">Токопроводы и шинопроводы</a></li>
+          <li><a href="/catalog/shkafy-avtomatiki-rza/">РЗА и автоматика</a></li>
+          <li><a href="/catalog/sistemy-svyazi/">Собственное производство</a></li>
+          <li><a href="/catalog/blokirovannye-zdaniya-bmz/">Блочно-модульные здания (БМЗ)</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Компания</div>
+        <ul class="footer-links">
+          <li><a href="/pages/about.html">О компании</a></li>
+          <li><a href="/pages/otraslevye-resheniya.html">Отраслевые решения</a></li>
+          <li><a href="/pages/klientam.html">Клиентам</a></li>
+          <li><a href="/pages/sertifikaty.html">Сертификаты</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Контакты</div>
+        <ul class="footer-links">
+          <li>Тел: <a href="tel:+79185318800">+7 (918) 531-88-00</a></li>
+          <li>Email: <a href="mailto:info@swind.su">info@swind.su</a></li>
+          <li>г. Ростов-на-Дону, пер. Радиаторный, д. 10, офис 1а</li>
+          <li><a href="/pages/contacts.html">Все контакты</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 ООО «Южный Ветер». Все права защищены. ИНН/КПП 6165178396/616501001, ОГРН 1126165013336</p>
+      <p><a href="/seo/privacy.html">Политика конфиденциальности</a></p>
+    </div>
+  </div>
+</footer>
+<!--/inc:footer--></div>
   <script>document.addEventListener('DOMContentLoaded', () => { if (typeof initCategoryPage === 'function') initCategoryPage('shkafy-avtomatiki-rza', 'РЗА и автоматика', 'Релейная защита и автоматика', 'Продукция ООО НТЦ «Механотроника»: микропроцессорные устройства БМРЗ, шкафы РЗА ШЭ-МТ, дуговая защита ДУГА-МТ, системы оперативного тока СОПТ-МТ/ШОТ-МТ, панели АИИСКУЭ и программное обеспечение'); });</script>
 </body>
 </html>

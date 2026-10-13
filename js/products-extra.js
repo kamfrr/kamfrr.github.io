@@ -6,6 +6,7 @@ Object.assign(PRODUCTS, {
       category: "tokoprovody-shinoprovody",
       brand: "Мосэлектрощит",
       image: "/images/catalog/7/7_1.webp",
+      thumb: "/images/catalog/7/7_1-800.webp",
       description: "Токопроводы комплектные пофазно-экранированные генераторного напряжения 10, 20, 24 и 35 кВ с компенсированным внешним электромагнитным полем. Номинальные токи от 1600 до 33000 А.",
       specs: [
         { param: "Напряжение, кВ", value: "10; 20; 24; 35" },
@@ -36,6 +37,7 @@ Object.assign(PRODUCTS, {
       category: "tokoprovody-shinoprovody",
       brand: "Мосэлектрощит",
       image: "/images/catalog/7/7_2.webp",
+      thumb: "/images/catalog/7/7_2-800.webp",
       description: "Токопроводы комплектные закрытые напряжением 6, 10 и 20 кВ на номинальные токи до 6300 А для соединения трансформаторов со шкафами КРУ и турбогенераторов с повышающими трансформаторами.",
       specs: [
         { param: "Напряжение, кВ", value: "6; 10; 20" },
@@ -318,6 +320,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_1.webp",
+      thumb: "/images/catalog/9/9_1-800.webp",
       description: "Шкафы высокочастотной связи собственного производства для организации каналов релейной защиты и телемеханики по линиям электропередач.",
       specs: [
         { param: "Применение", value: "ЛЭП 110–500 кВ" },
@@ -341,6 +344,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_2.webp",
+      thumb: "/images/catalog/9/9_2-800.webp",
       description: "Шкафы цифровых систем передачи информации (ЦСПИ) собственного производства для подстанций и энергообъектов.",
       specs: [
         { param: "Интерфейсы", value: "E1, Ethernet" },
@@ -364,6 +368,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_3.webp",
+      thumb: "/images/catalog/9/9_3-800.webp",
       description: "Шкафы внутриобъектовой связи собственного производства для организации оперативной и технологической связи на подстанциях и энергообъектах.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -387,6 +392,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_4.webp",
+      thumb: "/images/catalog/9/9_4-800.webp",
       description: "Шкафы радиорелейных линий (РРЛ) собственного производства для организации дальних трактов связи энергообъектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -410,6 +416,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_5.webp",
+      thumb: "/images/catalog/9/9_5-800.webp",
       description: "Шкафы волоконно-оптических линий связи (ВОЛС) собственного производства для высокоскоростной передачи данных на энергообъектах.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -433,6 +440,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_6.webp",
+      thumb: "/images/catalog/9/9_6-800.webp",
       description: "Шкафы информационной безопасности собственного производства: шифрование, межсетевые экраны и защита от несанкционированного доступа для энергетических объектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -456,6 +464,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_7.webp",
+      thumb: "/images/catalog/9/9_7-800.webp",
       description: "Шкафы систем видеонаблюдения собственного производства для круглосуточного контроля подстанций и энергообъектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -479,6 +488,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_8.webp",
+      thumb: "/images/catalog/9/9_8-800.webp",
       description: "Шкафы систем контроля и управления доступом (СКУД) собственного производства для обеспечения безопасности подстанций и энергообъектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -502,6 +512,7 @@ Object.assign(PRODUCTS, {
       category: "sistemy-svyazi",
       brand: "Собственное производство",
       image: "/images/catalog/9/9_9.webp",
+      thumb: "/images/catalog/9/9_9-800.webp",
       description: "Шкафы бесперебойного гарантированного электропитания и автономного электроснабжения собственного производства для критически важных объектов.",
       specs: [
         { param: "Комплектация", value: "Под проект заказчика" },
@@ -527,6 +538,7 @@ Object.assign(PRODUCTS, {
       category: "blokirovannye-zdaniya-bmz",
       brand: "Мосэлектрощит",
       image: "/images/catalog/10/10_1.webp",
+      thumb: "/images/catalog/10/10_1-800.webp",
       description: "Блочно-модульные закрытые распределительные устройства (ЗРУ) 6–35 кВ заводской готовности на базе ячеек КРУ и КСО.",
       specs: [
         { param: "Напряжение, кВ", value: "6; 10; 20; 35" },
@@ -553,6 +565,7 @@ Object.assign(PRODUCTS, {
       category: "blokirovannye-zdaniya-bmz",
       brand: "Мосэлектрощит",
       image: "/images/catalog/10/10_2.webp",
+      thumb: "/images/catalog/10/10_2-800.webp",
       description: "Блочно-модульные комплектные и распределительные трансформаторные подстанции 6(10)/0,4 кВ и низковольтные комплектные устройства полной заводской готовности.",
       specs: [
         { param: "Напряжение, кВ", value: "6(10)/0,4" },
@@ -579,6 +592,7 @@ Object.assign(PRODUCTS, {
       category: "blokirovannye-zdaniya-bmz",
       brand: "Мосэлектрощит",
       image: "/images/catalog/10/10_3.webp",
+      thumb: "/images/catalog/10/10_3-800.webp",
       description: "Блочно-модульные общеподстанционные пункты управления (ОПУ) для размещения панелей РЗА, связи, АИИСКУЭ, щитов постоянного и переменного тока.",
       specs: [
         { param: "Назначение", value: "ОПУ" },

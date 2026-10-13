@@ -6,7 +6,7 @@ function initCategoryPage(categorySlug, categoryName, categoryTitle, categoryDes
   if (grid && products.length) {
     grid.innerHTML = products.map(p => {
       const imgHtml = p.image ?
-        `<img src="${p.image}" alt="${p.name}" loading="lazy">` :
+        `<img src="${p.image}"${p.thumb ? ` srcset="${p.thumb} 800w, ${p.image} 1600w" sizes="(min-width: 768px) 400px, (min-width: 640px) 50vw, 100vw"` : ''} alt="${p.name}" loading="lazy">` :
         `<div class="img-placeholder"><span class="img-placeholder-name">${p.name}</span><span class="img-placeholder-note">Фото скоро появится</span></div>`;
       return `
       <a href="/catalog/${categorySlug}/${p.slug}/" class="product-card">

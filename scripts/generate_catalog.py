@@ -7,6 +7,8 @@ import os
 import shutil
 from datetime import date
 
+from inline_components import inline_components
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG_DIR = os.path.join(BASE_DIR, 'catalog')
 JS_DIR = os.path.join(BASE_DIR, 'js')
@@ -15,6 +17,9 @@ SITE_URL = 'https://swind.su'
 SITE_NAME = 'Южный Ветер'
 # JPG on purpose: messengers do not reliably render WebP link previews
 OG_IMAGE = '/images/og-cover.jpg'
+FONT_PRELOADS = '''  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-cyrillic.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-latin.woff2" crossorigin>'''
+HERO_SIZES = '(min-width: 768px) 50vw, 100vw'
 STATIC_PAGES = [
     ('/pages/about.html', '0.7'),
     ('/pages/otraslevye-resheniya.html', '0.7'),
@@ -30,6 +35,19 @@ def ensure_dir(path):
 
 def js_str(value):
     return json.dumps(value, ensure_ascii=False)
+
+
+def thumb_for(image):
+    """Path of the 800px version of an image, if one was generated next to it."""
+    if not image or not image.endswith('.webp'):
+        return ""
+    thumb = image[:-len('.webp')] + '-800.webp'
+    return thumb if os.path.exists(os.path.join(BASE_DIR, thumb.lstrip('/'))) else ""
+
+
+def srcset_attr(image, sizes):
+    thumb = thumb_for(image)
+    return f' srcset="{thumb} 800w, {image} 1600w" sizes="{sizes}"' if thumb else ""
 
 
 def abs_url(path):
@@ -129,6 +147,8 @@ def product_to_js(product):
     if product.get("brand"):
         lines.append(f'      brand: {js_str(product["brand"])},')
     lines.append(f'      image: {js_str(product.get("image", ""))},')
+    if thumb_for(product.get("image", "")):
+        lines.append(f'      thumb: {js_str(thumb_for(product["image"]))},')
     lines.append(f'      description: {js_str(product["description"])},')
     lines.append("      specs: [")
     for spec in product.get("specs", []):
@@ -214,14 +234,11 @@ def generate_category_page(category, products_list, extra_scripts=""):
   <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
 {head_seo}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+{FONT_PRELOADS}
   <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/base.css?v=2">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/layout.css">
-  <script src="/js/categories.js" defer></script>
   <script src="/js/products-data.js" defer></script>
 {extra_scripts}
   <script src="/js/components.js" defer></script>
@@ -257,7 +274,7 @@ def generate_category_page(category, products_list, extra_scripts=""):
 '''
 
 
-def generate_product_page(category, product, extra_scripts=""):
+def generate_product_page(category, product):
     cat_slug = category["slug"]
     p = product
     images = p.get("images") or ([p["image"]] if p.get("image") else [])
@@ -272,7 +289,7 @@ def generate_product_page(category, product, extra_scripts=""):
             f'</div>'
         )
     elif images:
-        image_html = f'<div class="product-hero-image"><img src="{images[0]}" alt="{p["name"]}"></div>'
+        image_html = f'<div class="product-hero-image"><img src="{images[0]}"{srcset_attr(images[0], HERO_SIZES)} alt="{p["name"]}"></div>'
     else:
         image_html = f'<div class="product-hero-image"><div class="img-placeholder"><span class="img-placeholder-name">{p["name"]}</span><span class="img-placeholder-note">Фото скоро появится</span></div></div>'
     specs_rows = "\n".join([f'              <tr><td>{s["param"]}</td><td>{s["value"]}</td></tr>' for s in p.get("specs", [])])
@@ -304,16 +321,11 @@ def generate_product_page(category, product, extra_scripts=""):
   <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
   <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
 {head_seo}
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+{FONT_PRELOADS}
   <link rel="stylesheet" href="/css/variables.css">
-  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/base.css?v=2">
   <link rel="stylesheet" href="/css/components.css">
   <link rel="stylesheet" href="/css/layout.css">
-  <script src="/js/categories.js" defer></script>
-  <script src="/js/products-data.js" defer></script>
-  <script src="/js/products-extra.js" defer></script>
   <script src="/js/components.js" defer></script>
 {ld}
 </head>
@@ -408,12 +420,12 @@ def main():
         cat_dir = os.path.join(CATALOG_DIR, cat["slug"])
         ensure_dir(cat_dir)
         with open(os.path.join(cat_dir, 'index.html'), 'w', encoding='utf-8') as f:
-            f.write(generate_category_page(cat, products.get(cat["slug"], []), extra_scripts))
+            f.write(inline_components(generate_category_page(cat, products.get(cat["slug"], []), extra_scripts)))
         for prod in products.get(cat["slug"], []):
             prod_dir = os.path.join(cat_dir, prod["slug"])
             ensure_dir(prod_dir)
             with open(os.path.join(prod_dir, 'index.html'), 'w', encoding='utf-8') as f:
-                f.write(generate_product_page(cat, prod, extra_scripts))
+                f.write(inline_components(generate_product_page(cat, prod)))
 
     with open(os.path.join(BASE_DIR, 'sitemap.xml'), 'w', encoding='utf-8') as f:
         f.write(generate_sitemap(categories, products))
